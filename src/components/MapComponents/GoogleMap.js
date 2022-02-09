@@ -1,6 +1,7 @@
 import React from "react";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import { Box } from "@mui/system";
+import { MapMarkers } from "./MapMarkers";
 
 const containerStyle = {
   width: "100%",
@@ -38,6 +39,7 @@ function MapComponent(props) {
         options={options}
       >
         {/* Child components, such as markers, info windows, etc. */}
+        <MapMarkers />
       </GoogleMap>
     );
   }

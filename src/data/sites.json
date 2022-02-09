@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Tower of Jericho",
+        "numbericDate": 10000,
+        "gpsCoordinates": {
+            "lat": 31.872041,
+            "long": 35.443981
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Tower_of_Jericho.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tower_of_Jericho.jpg/128px-Tower_of_Jericho.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Tower_of_Jericho.jpg/512px-Tower_of_Jericho.jpg",
+                "attribution": {
+                    "author": "Reinhard Dietrich",
+                    "domain": "Public Domain",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Tower_of_Jericho"
+    },
+    {
+        "name": "Gobekli Tepe",
+        "numbericDate": 11500,
+        "gpsCoordinates": {
+            "lat": 37.223056,
+            "long": 38.9225
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:G%C3%B6bekli_Tepe,_Urfa.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/256px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/G%C3%B6bekli_Tepe%2C_Urfa.jpg/512px-G%C3%B6bekli_Tepe%2C_Urfa.jpg",
+                "attribution": {
+                    "author": "Teomancimit",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Gobekli_Tepe_2.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Gobekli_Tepe_2.jpg/128px-Gobekli_Tepe_2.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Gobekli_Tepe_2.jpg/512px-Gobekli_Tepe_2.jpg",
+                "attribution": {
+                    "author": "Teomancimit",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Vulture_Stone,_Gobekli_Tepe,_Sanliurfa,_South-east_Anatolia,_Turkey.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Vulture_Stone%2C_Gobekli_Tepe%2C_Sanliurfa%2C_South-east_Anatolia%2C_Turkey.jpg/128px-Vulture_Stone%2C_Gobekli_Tepe%2C_Sanliurfa%2C_South-east_Anatolia%2C_Turkey.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Vulture_Stone%2C_Gobekli_Tepe%2C_Sanliurfa%2C_South-east_Anatolia%2C_Turkey.jpg/512px-Vulture_Stone%2C_Gobekli_Tepe%2C_Sanliurfa%2C_South-east_Anatolia%2C_Turkey.jpg",
+                "attribution": {
+                    "author": "Sue Fleckney",
+                    "domain": "CC BY-SA 2.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+    }
+]
