@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Megalith",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG/256px-Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG",
+        "definition": "megaliths are a group of large rocks",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_14.JPG",
+        "imageAttribution": ""
+    },
+    {
+        "name": "Monolith",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG/256px-Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG",
+        "definition": "small rocks",
+        "imageLink": "",
+        "imageAttribution": ""
+    }
+]
