@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 import { Box } from "@mui/system";
 import { MapMarkers } from "./MapMarkers";
+import { InfoWindowDisplay } from "./InfoWindowDisplay";
 
 const containerStyle = {
   width: "100%",
@@ -22,6 +23,8 @@ function MapComponent(props) {
     googleMapsApiKey: REACT_APP_GOOGLE_API,
   });
 
+  const [sitesIndex, setSitesIndex] = useState(null);
+
   if (loadError) {
     return <div>Map cannot be loaded right now, sorry.</div>;
   }
@@ -39,7 +42,13 @@ function MapComponent(props) {
         options={options}
       >
         {/* Child components, such as markers, info windows, etc. */}
-        <MapMarkers />
+        <MapMarkers setSitesIndex={setSitesIndex} />
+        {sitesIndex !== null && (
+          <InfoWindowDisplay
+            sitesIndex={sitesIndex}
+            setSitesIndex={setSitesIndex}
+          />
+        )}
       </GoogleMap>
     );
   }

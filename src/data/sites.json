@@ -60,5 +60,89 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+    },
+    {
+        "name": "Atlit Yam",
+        "numbericDate": 10900,
+        "gpsCoordinates": {
+            "lat": 32.710828,
+            "long": 34.93515
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Atlit-Yam,_Ritual_structure_made_of_stones.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Atlit-Yam%2C_Ritual_structure_made_of_stones.JPG/128px-Atlit-Yam%2C_Ritual_structure_made_of_stones.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Atlit-Yam%2C_Ritual_structure_made_of_stones.JPG/512px-Atlit-Yam%2C_Ritual_structure_made_of_stones.JPG",
+                "attribution": {
+                    "author": "Hanay",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Atlit_Yam"
+    },
+    {
+        "name": "Almendres Cromlech",
+        "numbericDate": 8000,
+        "gpsCoordinates": {
+            "lat": 38.55749,
+            "long": -8.061187
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Megaliticos_do_Almendres_Cromlech.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Megaliticos_do_Almendres_Cromlech.jpg/256px-Megaliticos_do_Almendres_Cromlech.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Megaliticos_do_Almendres_Cromlech.jpg/512px-Megaliticos_do_Almendres_Cromlech.jpg",
+                "attribution": {
+                    "author": "Dicklyon",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Almendres_Cromlech"
+    },
+    {
+        "name": "Barnenez",
+        "numbericDate": 6850,
+        "gpsCoordinates": {
+            "lat": 48.6675,
+            "long": -3.858611
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Plouezoc%27h_(29)_Cairn_de_Barnenez_05.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Plouezoc%27h_%2829%29_Cairn_de_Barnenez_05.JPG/256px-Plouezoc%27h_%2829%29_Cairn_de_Barnenez_05.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Plouezoc%27h_%2829%29_Cairn_de_Barnenez_05.JPG/512px-Plouezoc%27h_%2829%29_Cairn_de_Barnenez_05.JPG",
+                "attribution": {
+                    "author": "GO69",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Barnenez"
+    },
+    {
+        "name": "Tumulus of Bougon",
+        "numbericDate": 6800,
+        "gpsCoordinates": {
+            "lat": 46.374,
+            "long": -0.0675
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Bougon_tumulus-A_pano.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/256px-Bougon_tumulus-A_pano.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/512px-Bougon_tumulus-A_pano.JPG",
+                "attribution": {
+                    "author": "Liberliger",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon"
     }
 ]

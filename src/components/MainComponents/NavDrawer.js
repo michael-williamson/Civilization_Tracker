@@ -39,6 +39,7 @@ export const NavDrawer = (props) => {
 
       {routesArray.map((text) => (
         <NavLink
+          key={text}
           to={`/${text}`}
           className={(isActive) =>
             "nav-link" + (!isActive ? " unselected" : "")
