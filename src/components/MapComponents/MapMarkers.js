@@ -22,7 +22,7 @@ export const MapMarkers = (props) => {
         opacity={1}
         icon={{
           url: civIcon,
-          scaledSize: new window.google.maps.Size(30, 30),
+          scaledSize: new window.google.maps.Size(20, 20),
         }}
       />
     );

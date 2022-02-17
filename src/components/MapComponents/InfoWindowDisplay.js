@@ -74,14 +74,19 @@ export const InfoWindowDisplay = (props) => {
           <Box
             sx={{
               display: "flex",
+              justifyContent: "center",
               fontSize: { xs: 20, md: 30 },
               fontWeight: "bold",
               ...sharedStylingFieldContainer,
             }}
           >
             {/* <Box color="primary.main">Link to Info: </Box>{" "} */}
-            <Box sx={{ pl: { xs: 2, md: 4 } }}>
-              <a href={item.linkToInfo}>more info</a>
+            <Box
+              sx={{
+                pl: { xs: 2, md: 4 },
+              }}
+            >
+              <a href={item.linkToInfo}>click here for more info</a>
             </Box>
           </Box>
         </Box>

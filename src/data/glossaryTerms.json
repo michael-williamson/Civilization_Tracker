@@ -44,6 +44,83 @@
         }
     },
     {
+        "name": "Wheat",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Wheat_close-up.JPG/256px-Wheat_close-up.JPG",
+        "definition": "Wheat is a grass cultivated for its seed which is a cereal grain.  It is said to be first cultivated around 9600 BC in a region in the Middle East known as the Fertile Crescent",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Wheat_close-up.JPG",
+        "imageAttribution": {
+            "author": "User:Bluemoose",
+            "domain": "CC BY-SA 3.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Fertile Crescent",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Fertile_Crescent.png/256px-Fertile_Crescent.png",
+        "definition": "A crescent shaped region in the Middle East known as one of the cradles of civilization.  Due to climatic shifts this region produce many 'r' type annual plants which produce more edible seeds.  This phenomenon combined with variety in elevation also produced many species of these special plants.  Also home to many grazing animals which would later be domesticated.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Fertile_Crescent.png",
+        "imageAttribution": {
+            "author": "Sémhur derivative work: Rafy",
+            "domain": "CC BY-SA 2.5",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Barley",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Hordeum_vulgare_%286-row_barley%2C_Gerste%29_dry_specimens_%282019-08-07%29.jpg/256px-Hordeum_vulgare_%286-row_barley%2C_Gerste%29_dry_specimens_%282019-08-07%29.jpg",
+        "definition": "A member of the grass family, one of the first cultivated grains particularly in Eurasia early as 10,000 years ago.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Hordeum_vulgare_(6-row_barley,_Gerste)_dry_specimens_(2019-08-07).jpg",
+        "imageAttribution": {
+            "author": "Franz van Duns",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Pre-Pottery Neolithic (PPN)",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Fertile_crescent_Neolithic_B_circa_7500_BC.jpg/256px-Fertile_crescent_Neolithic_B_circa_7500_BC.jpg",
+        "definition": "A period dating from 12,000 to 8,500 years ago in the region of the Fertile Crescent.  During this period the domestication of plants and animals was in its formative stage.  It is popular to name timelines inside of this overall period as Pre-Pottery Neolithic A and Pre-Pottery Neolithic B.  Pre-Pottery Neolithic A encompasses the timeline from 10,000 BC to 8,800 BC.  It is characterized by tiny circular mud-brick dwellings, crop cultivation, hunting of wild animals, and burial customs where bodies are buried below the floors of dwellings.  Pre-Pottery Neolithic B spans from 8,800 BC until 6,500 BC.  In this period animal domestication was more prevalent,  flint tools were more advanced, and the beginnings of the pottery age were taking shape.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Fertile_crescent_Neolithic_B_circa_7500_BC.jpg",
+        "imageAttribution": {
+            "author": "Bjoertvedt",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Younger Dryas",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Younger_Dryas_temperature_variation.png/256px-Younger_Dryas_temperature_variation.png",
+        "definition": "A period from around 12,900 to 11,700 years ago where the Earth suddenly entered an ice age rather quickly over the course of a few decades.  This rapid change would have created advanced evolutionary selection pressures and also probably played a role in the course humanity would take after this period.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Younger_Dryas_temperature_variation.png",
+        "imageAttribution": {
+            "author": "Hannes Grobe",
+            "domain": "CC BY-SA 3.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Sickle",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Neolithic_Stone_Sickle_on_Modern_Handle.jpg/256px-Neolithic_Stone_Sickle_on_Modern_Handle.jpg",
+        "definition": "A sickle is an agricultural tool designed with a curved blade used for harvesting or reaping grain crops.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Neolithic_Stone_Sickle_on_Modern_Handle.jpg",
+        "imageAttribution": {
+            "author": "Gary Todd",
+            "domain": "CC0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Proto-city",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/King_Site_Aerial_HRoe_2018.jpg",
+        "definition": "A Proto-city would have been any large village or town existing the in Neolithic period which had both rural and urban features.  It's differing aspect from a true city would have that it lacks planning and centralized rule.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:King_Site_Aerial_HRoe_2018.jpg",
+        "imageAttribution": {
+            "author": "Herb Roe",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
         "name": "",
         "image": "",
         "definition": "",

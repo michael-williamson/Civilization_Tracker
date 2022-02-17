@@ -1,6 +1,6 @@
 [
     {
-        "name": "Tower of Jericho",
+        "name": "Jericho",
         "numbericDate": 10000,
         "gpsCoordinates": {
             "lat": 31.872041,
@@ -19,7 +19,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Tower_of_Jericho",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": "One of the world's first major proto-cities.  Towers of Jericho consisted of mud-brick houses that were circular built of clay and straw bricks.  Estimates of the population vary from a few hundred to a few thousand.  The proto-city was surrounded by a 12 ft wall and inside stood a stone tower known as the Tower of Jericho."
     },
     {
         "name": "Gobekli Tepe",
@@ -61,7 +61,39 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": ""
+    },
+    {
+        "name": "Bhirrana",
+        "numbericDate": 9500,
+        "gpsCoordinates": {
+            "lat": 29.554167,
+            "long": 75.548611
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Remains_of_Harappan_city.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Remains_of_Harappan_city.jpg/256px-Remains_of_Harappan_city.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Remains_of_Harappan_city.jpg/512px-Remains_of_Harappan_city.jpg",
+                "attribution": {
+                    "author": "Ranjith Kumar Inbasekaran",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Harappn_artefacts_nm_india_01.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Harappn_artefacts_nm_india_01.JPG/256px-Harappn_artefacts_nm_india_01.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Harappn_artefacts_nm_india_01.JPG/512px-Harappn_artefacts_nm_india_01.JPG",
+                "attribution": {
+                    "author": "Nomu420",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Bhirrana",
+        "description": "Bhirrana culture used subterranean dwellings where the walls were plastered with a yellowish alluvium.  Interesting artifacts such as copper arrowheads and beads of camelian.  Lapis lazul ornaments were a part of the artistics design.  They decorated pottery with various paintings and colors."
     },
     {
         "name": "Atlit Yam",
@@ -83,7 +115,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Atlit_Yam",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": ""
     },
     {
         "name": "Almendres Cromlech",
@@ -105,7 +137,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Almendres_Cromlech",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": ""
     },
     {
         "name": "Barnenez",
@@ -127,7 +159,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Barnenez",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": ""
     },
     {
         "name": "Tumulus of Bougon",
@@ -149,7 +181,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "description": ""
     },
     {
         "name": "Nanzhuangtou",
@@ -258,88 +290,68 @@
         "description": "Franchthi Cave shows signs of human habitation dating back 40,000 years and possibly more.  Human habitation began showing signs of neolithic culture around 9000 years ago or 7000 BC.  Showing some of the earliest evidence of agriculture in Greece,  It is believed that the agricultural practice was brought to these inhabitants by cultures of the Near East."
     },
     {
-        "name": "",
-        "numbericDate": 9000,
+        "name": "Cishan culture",
+        "numbericDate": 8500,
         "gpsCoordinates": {
-            "lat": 37.423333,
-            "long": 23.132222
+            "lat": 36.7,
+            "long": 114.2
         },
         "images": [
             {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Ding,_Peiligang_Xinzheng.Henan_provincial_museum.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ding%2C_Peiligang_Xinzheng.Henan_provincial_museum.jpg/256px-Ding%2C_Peiligang_Xinzheng.Henan_provincial_museum.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Ding%2C_Peiligang_Xinzheng.Henan_provincial_museum.jpg/512px-Ding%2C_Peiligang_Xinzheng.Henan_provincial_museum.jpg",
                 "attribution": {
-                    "author": "",
+                    "author": "Prof. Gary Lee Todd",
                     "domain": "CC BY-SA 4.0",
                     "via": "Wikimedia Commons"
                 }
             },
             {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Neolithic_pottery_cauldron_%26_supporting_legs,_Cishan_Culture,_Hebei,_1977.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Neolithic_pottery_cauldron_%26_supporting_legs%2C_Cishan_Culture%2C_Hebei%2C_1977.JPG/256px-Neolithic_pottery_cauldron_%26_supporting_legs%2C_Cishan_Culture%2C_Hebei%2C_1977.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Neolithic_pottery_cauldron_%26_supporting_legs%2C_Cishan_Culture%2C_Hebei%2C_1977.JPG/512px-Neolithic_pottery_cauldron_%26_supporting_legs%2C_Cishan_Culture%2C_Hebei%2C_1977.JPG",
                 "attribution": {
-                    "author": "",
-                    "domain": "CC BY-SA 4.0",
-                    "via": "Wikimedia Commons"
-                }
-            },
-            {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
-                "attribution": {
-                    "author": "",
+                    "author": "Prof. Gary Lee Todd",
                     "domain": "CC BY-SA 4.0",
                     "via": "Wikimedia Commons"
                 }
             }
         ],
-        "linkToInfo": "",
-        "description": ""
+        "linkToInfo": "https://en.wikipedia.org/wiki/Cishan_culture",
+        "description": "Cishan Culture was a neolithic culture in northern China that existed from 6500 BC until 5000 BC.  Located in the foothills of the Talhang Mountains, the Cishan Culture farmed different types of millet.  Pottery has been found along with stone grinders used to grind millet.  This culture is said to be a link to the Sino-Tibetan language family"
     },
     {
-        "name": "",
+        "name": "Sesklo",
         "numbericDate": 9000,
         "gpsCoordinates": {
-            "lat": 37.423333,
-            "long": 23.132222
+            "lat": 39.355,
+            "long": 22.835
         },
         "images": [
             {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sesklo_and_Dimini_neolithic_4800_BC,_NAMA_080795.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sesklo_and_Dimini_neolithic_4800_BC%2C_NAMA_080795.jpg/256px-Sesklo_and_Dimini_neolithic_4800_BC%2C_NAMA_080795.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sesklo_and_Dimini_neolithic_4800_BC%2C_NAMA_080795.jpg/512px-Sesklo_and_Dimini_neolithic_4800_BC%2C_NAMA_080795.jpg",
                 "attribution": {
-                    "author": "",
-                    "domain": "CC BY-SA 4.0",
+                    "author": "Zde",
+                    "domain": "CC BY-SA 3.0",
                     "via": "Wikimedia Commons"
                 }
             },
             {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:%CE%9D%CE%95%CE%9F%CE%9B%CE%99%CE%98%CE%99%CE%9A%CE%9F%CE%A3_%CE%A0%CE%9F%CE%9B%CE%99%CE%A4%CE%99%CE%A3%CE%9C%CE%9F%CE%A3.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%CE%9D%CE%95%CE%9F%CE%9B%CE%99%CE%98%CE%99%CE%9A%CE%9F%CE%A3_%CE%A0%CE%9F%CE%9B%CE%99%CE%A4%CE%99%CE%A3%CE%9C%CE%9F%CE%A3.jpg/256px-%CE%9D%CE%95%CE%9F%CE%9B%CE%99%CE%98%CE%99%CE%9A%CE%9F%CE%A3_%CE%A0%CE%9F%CE%9B%CE%99%CE%A4%CE%99%CE%A3%CE%9C%CE%9F%CE%A3.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/%CE%9D%CE%95%CE%9F%CE%9B%CE%99%CE%98%CE%99%CE%9A%CE%9F%CE%A3_%CE%A0%CE%9F%CE%9B%CE%99%CE%A4%CE%99%CE%A3%CE%9C%CE%9F%CE%A3.jpg/512px-%CE%9D%CE%95%CE%9F%CE%9B%CE%99%CE%98%CE%99%CE%9A%CE%9F%CE%A3_%CE%A0%CE%9F%CE%9B%CE%99%CE%A4%CE%99%CE%A3%CE%9C%CE%9F%CE%A3.jpg",
                 "attribution": {
-                    "author": "",
-                    "domain": "CC BY-SA 4.0",
-                    "via": "Wikimedia Commons"
-                }
-            },
-            {
-                "wikimediaAddress": "",
-                "thumbnail": "",
-                "display": "",
-                "attribution": {
-                    "author": "",
-                    "domain": "CC BY-SA 4.0",
+                    "author": "Angelos Giannaros",
+                    "domain": "CC BY-SA 3.0",
                     "via": "Wikimedia Commons"
                 }
             }
         ],
-        "linkToInfo": "",
-        "description": ""
+        "linkToInfo": "https://en.wikipedia.org/wiki/Sesklo",
+        "description": "Earliest known settlement in Europe.  Evidence of domesticated cattle, along with farming of Wheat and Barley.  At around 5000 BC it is estimated that the population was around 5,000 and that the Sesklo settlement consisted of 500-800 houses."
     },
     {
         "name": "",

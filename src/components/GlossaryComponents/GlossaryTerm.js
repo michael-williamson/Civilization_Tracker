@@ -14,6 +14,8 @@ export const GlossaryTerm = (props) => {
       <Box
         sx={{
           display: "flex",
+          flexWrap: { xs: "wrap", md: "nowrap" },
+          justifyContent: "center",
           border: "solid 5px #dbdbdb",
           py: { xs: 2 },
           px: { xs: 4 },

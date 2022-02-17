@@ -32,6 +32,7 @@ export const GlossaryMain = () => {
       <Box
         sx={{
           display: "flex",
+          justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
           pb: { xs: 4 },
