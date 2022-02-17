@@ -33,8 +33,8 @@ export const GlossaryTerm = (props) => {
           >
             {name}:
           </Box>
-          <Box>
-            <img src={image} alt={name} />
+          <Box sx={{ textAlign: "center" }}>
+            <img src={image} alt={name} style={{ maxWidth: "100%" }} />
           </Box>
         </Box>
         <Box
