@@ -18,7 +18,8 @@
                 }
             }
         ],
-        "linkToInfo": "https://en.wikipedia.org/wiki/Tower_of_Jericho"
+        "linkToInfo": "https://en.wikipedia.org/wiki/Tower_of_Jericho",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Gobekli Tepe",
@@ -59,7 +60,8 @@
                 }
             }
         ],
-        "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe"
+        "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Atlit Yam",
@@ -80,7 +82,8 @@
                 }
             }
         ],
-        "linkToInfo": "https://en.wikipedia.org/wiki/Atlit_Yam"
+        "linkToInfo": "https://en.wikipedia.org/wiki/Atlit_Yam",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Almendres Cromlech",
@@ -101,7 +104,8 @@
                 }
             }
         ],
-        "linkToInfo": "https://en.wikipedia.org/wiki/Almendres_Cromlech"
+        "linkToInfo": "https://en.wikipedia.org/wiki/Almendres_Cromlech",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Barnenez",
@@ -122,7 +126,52 @@
                 }
             }
         ],
-        "linkToInfo": "https://en.wikipedia.org/wiki/Barnenez"
+        "linkToInfo": "https://en.wikipedia.org/wiki/Barnenez",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+    },
+    {
+        "name": "Tumulus of Bougon",
+        "numbericDate": 6800,
+        "gpsCoordinates": {
+            "lat": 46.374,
+            "long": -0.0675
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Bougon_tumulus-A_pano.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/256px-Bougon_tumulus-A_pano.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/512px-Bougon_tumulus-A_pano.JPG",
+                "attribution": {
+                    "author": "Liberliger",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+    },
+    {
+        "name": "Nanzhuangtou",
+        "numbericDate": 12600,
+        "gpsCoordinates": {
+            "lat": 39.116667,
+            "long": 115.65
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:ChinaBaodingXushui.png",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/8/82/ChinaBaodingXushui.png",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/8/82/ChinaBaodingXushui.png",
+                "attribution": {
+                    "author": "Slb nsk",
+                    "domain": "CC BY-SA 3.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Nanzhuangtou",
+        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Tumulus of Bougon",
@@ -144,5 +193,278 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon"
+    },
+    {
+        "name": "Tumulus of Bougon",
+        "numbericDate": 6800,
+        "gpsCoordinates": {
+            "lat": 46.374,
+            "long": -0.0675
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Bougon_tumulus-A_pano.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/256px-Bougon_tumulus-A_pano.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Bougon_tumulus-A_pano.JPG/512px-Bougon_tumulus-A_pano.JPG",
+                "attribution": {
+                    "author": "Liberliger",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon"
+    },
+    {
+        "name": "Franchthi Cave",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:024%CE%A3%CF%80%CE%AE%CE%BB%CE%B1%CE%B9%CE%BF_%CE%A6%CF%81%CE%AC%CF%87%CE%B8%CE%B9_%CE%95%CF%81%CE%BC%CE%B9%CE%BF%CE%BD%CE%AF%CE%B4%CE%B1%CF%82.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/024%CE%A3%CF%80%CE%AE%CE%BB%CE%B1%CE%B9%CE%BF_%CE%A6%CF%81%CE%AC%CF%87%CE%B8%CE%B9_%CE%95%CF%81%CE%BC%CE%B9%CE%BF%CE%BD%CE%AF%CE%B4%CE%B1%CF%82.jpg/256px-024%CE%A3%CF%80%CE%AE%CE%BB%CE%B1%CE%B9%CE%BF_%CE%A6%CF%81%CE%AC%CF%87%CE%B8%CE%B9_%CE%95%CF%81%CE%BC%CE%B9%CE%BF%CE%BD%CE%AF%CE%B4%CE%B1%CF%82.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/024%CE%A3%CF%80%CE%AE%CE%BB%CE%B1%CE%B9%CE%BF_%CE%A6%CF%81%CE%AC%CF%87%CE%B8%CE%B9_%CE%95%CF%81%CE%BC%CE%B9%CE%BF%CE%BD%CE%AF%CE%B4%CE%B1%CF%82.jpg/512px-024%CE%A3%CF%80%CE%AE%CE%BB%CE%B1%CE%B9%CE%BF_%CE%A6%CF%81%CE%AC%CF%87%CE%B8%CE%B9_%CE%95%CF%81%CE%BC%CE%B9%CE%BF%CE%BD%CE%AF%CE%B4%CE%B1%CF%82.jpg",
+                "attribution": {
+                    "author": "Efi tsif",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Neolithic_pottery,_Franchthi_Cave,_AM_of_Nafplio,_202055.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Neolithic_pottery%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202055.jpg/256px-Neolithic_pottery%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202055.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Neolithic_pottery%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202055.jpg/512px-Neolithic_pottery%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202055.jpg",
+                "attribution": {
+                    "author": "Zde",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Neolithic,_Franchthi_Cave,_AM_of_Nafplio,_202065.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Neolithic%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202065.jpg/256px-Neolithic%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202065.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Neolithic%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202065.jpg/512px-Neolithic%2C_Franchthi_Cave%2C_AM_of_Nafplio%2C_202065.jpg",
+                "attribution": {
+                    "author": "Zde",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Franchthi_Cave",
+        "description": "Franchthi Cave shows signs of human habitation dating back 40,000 years and possibly more.  Human habitation began showing signs of neolithic culture around 9000 years ago or 7000 BC.  Showing some of the earliest evidence of agriculture in Greece,  It is believed that the agricultural practice was brought to these inhabitants by cultures of the Near East."
+    },
+    {
+        "name": "",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "",
+        "numbericDate": 9000,
+        "gpsCoordinates": {
+            "lat": 37.423333,
+            "long": 23.132222
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
     }
 ]

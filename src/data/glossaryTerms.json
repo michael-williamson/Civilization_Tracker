@@ -2,15 +2,56 @@
     {
         "name": "Megalith",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG/256px-Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG",
-        "definition": "megaliths are a group of large rocks",
+        "definition": "Megaliths are either a large stone or a group of large stones used to construct prehistoric structures or monuments. Greek word 'mega' meaning great and 'lithos' meaning stone.",
         "imageLink": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_14.JPG",
-        "imageAttribution": ""
+        "imageAttribution": {
+            "author": "Diego Delso",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
     },
     {
         "name": "Monolith",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG/256px-Stonehenge%2C_Condado_de_Wiltshire%2C_Inglaterra%2C_2014-08-12%2C_DD_14.JPG",
-        "definition": "small rocks",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Callanish_II_rockdetail.jpg/256px-Callanish_II_rockdetail.jpg",
+        "definition": "A geological feature that consists of a single massive stone or rock.  When the term is used in architecture it can overlap with megalith.  Greek word 'monos' meaning one and 'lithos' for stone.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Callanish_II_rockdetail.jpg",
+        "imageAttribution": {
+            "author": "Nachosan",
+            "domain": "CC BY-SA 3.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Neolithic",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/02022_0892_Neolithic_site_in_Nowa_Huta%2C_Krak%C3%B3w.jpg/256px-02022_0892_Neolithic_site_in_Nowa_Huta%2C_Krak%C3%B3w.jpg",
+        "definition": "In Greek 'neos' meaning new and 'lithos' meaning stone.  Neolithic represents the 'New Stone Age', a period in which humans consistently begin to farm, create pottery,  designed advanced stone tools, and expand cultural behaviors",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:02022_0892_Neolithic_site_in_Nowa_Huta,_Krak%C3%B3w.jpg",
+        "imageAttribution": {
+            "author": "Couleur https://pixabay.com/users/couleur-1195798/",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Millet",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Millet-5337087_1920.jpg/256px-Millet-5337087_1920.jpg",
+        "definition": "A highly variable small-seeded grasses, grown around the world as cereal crops.  Millet played a pivotal role in the rise of human farming and settled societies",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Millet-5337087_1920.jpg",
+        "imageAttribution": {
+            "author": "Couleur https://pixabay.com/users/couleur-1195798/",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "",
+        "image": "",
+        "definition": "",
         "imageLink": "",
-        "imageAttribution": ""
+        "imageAttribution": {
+            "author": "",
+            "domain": "",
+            "via": ""
+        }
     }
 ]

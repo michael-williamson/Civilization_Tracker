@@ -29,7 +29,16 @@ export const GlossaryMain = () => {
       >
         Glossary
       </Box>
-      <Box>{glossaryTermsList()}</Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          pb: { xs: 4 },
+        }}
+      >
+        {glossaryTermsList()}
+      </Box>
     </Box>
   );
 };
