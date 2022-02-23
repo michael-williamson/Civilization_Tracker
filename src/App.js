@@ -6,15 +6,17 @@ import { MainPage } from "./components/MainComponents/MainPage";
 import { GlossaryMain } from "./components/GlossaryComponents/GlossaryMain";
 import { ChartPage } from "./components/ChartComponents/ChartPage";
 import { routes } from "../src/routes/index";
+import { WelcomeComponent } from "./components/MainComponents/WelcomeComponent";
 
 function App() {
   return (
     <div className="App">
       <MainPage />
       <Routes>
-        <Route exact path={routes.map} element={<GoogleMap />} />
-        <Route exact path={routes.glossary} element={<GlossaryMain />} />
-        <Route exact path={routes.charts} element={<ChartPage />} />
+        <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
+        <Route exact path={routes.Map} element={<GoogleMap />} />
+        <Route exact path={routes.Glossary} element={<GlossaryMain />} />
+        <Route exact path={routes.Charts} element={<ChartPage />} />
       </Routes>
     </div>
   );

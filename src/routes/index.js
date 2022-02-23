@@ -1,7 +1,8 @@
 export const routes = {
-  map: "map",
-  glossary: "glossary",
-  charts: "charts",
+  Welcome: "/",
+  Map: "Map",
+  Glossary: "Glossary",
+  Charts: "Charts",
 };
 
-export const routesArray = ["map", "glossary", "charts"];
+export const routesArray = ["Map", "Glossary", "Charts"];

@@ -7,9 +7,9 @@ import { routesArray } from "../../routes";
 import { Map, List as ListIcon, BarChart } from "@mui/icons-material";
 
 const iconObject = {
-  map: <Map sx={{ fontSize: 40 }} />,
-  glossary: <ListIcon sx={{ fontSize: 40 }} />,
-  charts: <BarChart sx={{ fontSize: 40 }} />,
+  Map: <Map sx={{ fontSize: 40 }} />,
+  Glossary: <ListIcon sx={{ fontSize: 40 }} />,
+  Charts: <BarChart sx={{ fontSize: 40 }} />,
 };
 
 export const NavDrawer = (props) => {
