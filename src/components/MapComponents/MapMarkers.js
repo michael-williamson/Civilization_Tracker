@@ -1,12 +1,16 @@
 import React from "react";
 import { Marker } from "@react-google-maps/api";
-import sites from "../../data/sites.json";
 import { Box } from "@mui/system";
-import { civIcon } from "../../media";
 
 export const MapMarkers = (props) => {
-  const { setSitesIndex } = props;
-  const markers = sites.map((item, index) => {
+  const {
+    setJsonIndex,
+    dataArr,
+    setCurrentInfoWindow,
+    markerRepresentation,
+    icon,
+  } = props;
+  const markers = dataArr.map((item, index) => {
     if (item.name === "") return null;
     return (
       <Marker
@@ -17,11 +21,12 @@ export const MapMarkers = (props) => {
           lng: item.gpsCoordinates.long,
         }}
         onClick={() => {
-          setSitesIndex(index);
+          setJsonIndex(index);
+          setCurrentInfoWindow(markerRepresentation);
         }}
         opacity={1}
         icon={{
-          url: civIcon,
+          url: icon,
           scaledSize: new window.google.maps.Size(20, 20),
         }}
       />

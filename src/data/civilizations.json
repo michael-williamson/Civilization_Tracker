@@ -1,5 +1,306 @@
 [
     {
-        "civilizationName": "Anatolian"
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 32,
+            "long": 46
+        },
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumerian_portrait_statuette_of_a_woman_02.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Sumerian_portrait_statuette_of_a_woman_02.jpg/256px-Sumerian_portrait_statuette_of_a_woman_02.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Sumerian_portrait_statuette_of_a_woman_02.jpg/512px-Sumerian_portrait_statuette_of_a_woman_02.jpg",
+                "attribution": {
+                    "author": "ArchaiOptix",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumerian_26th_c_Adab.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/91/Sumerian_26th_c_Adab.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/9/91/Sumerian_26th_c_Adab.jpg",
+                "attribution": {
+                    "author": "",
+                    "domain": "Public Domain",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumerian_portrait_statuette_of_a_bearded_man_03.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sumerian_portrait_statuette_of_a_bearded_man_03.jpg/256px-Sumerian_portrait_statuette_of_a_bearded_man_03.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sumerian_portrait_statuette_of_a_bearded_man_03.jpg/512px-Sumerian_portrait_statuette_of_a_bearded_man_03.jpg",
+                "attribution": {
+                    "author": "ArchaiOptix",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Tablet_of_the_Gilgamish_Epic_(Reverse).jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Tablet_of_the_Gilgamish_Epic_%28Reverse%29.jpg/256px-Tablet_of_the_Gilgamish_Epic_%28Reverse%29.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Tablet_of_the_Gilgamish_Epic_%28Reverse%29.jpg/512px-Tablet_of_the_Gilgamish_Epic_%28Reverse%29.jpg",
+                "attribution": {
+                    "author": "Stephen Langdon",
+                    "domain": "Public Domain",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Sumer",
+        "description": "One of the first civilizations in the world,  Sumer was located in Southern Mesopotamia (modern day south central Iraq).  Sumerians referred to their land as Kengir, 'Country of the noble lords',  and also referred to themselves as 'Black Headed Ones'.  Historians suggest that Sumer was first permanently settled between 5500 and 4000 BC by a West Asian people,  others have suggested that origins could have come from North Africans who migrated from the Green Sahara.  As the Sumer civilization developed it consisted of independent city-states divided by canals and boundary stones.  At its height, Sumer is thought to have had a population between 0.5 and 1.8 million."
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
+    },
+    {
+        "name": "Sumer",
+        "numbericDate": 8500,
+        "gpsCoordinates": {
+            "lat": 36.7,
+            "long": 114.2
+        },
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "description": ""
     }
 ]

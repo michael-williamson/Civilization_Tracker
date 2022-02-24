@@ -16,7 +16,7 @@ const iconObject = {
 
 const navItemsList = () => {
   return routesArray.map((item) => {
-    return <NavBarItem icon={iconObject[`${item}`]} text={item} />;
+    return <NavBarItem icon={iconObject[`${item}`]} text={item} key={item} />;
   });
 };
 

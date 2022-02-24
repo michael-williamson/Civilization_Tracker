@@ -5,7 +5,6 @@ import { useTheme } from "@mui/material/styles";
 
 export const NavBarItem = (props) => {
   const { icon, text } = props;
-  console.log(text, "text in navbaritem");
   const theme = useTheme();
   return (
     <NavLink
