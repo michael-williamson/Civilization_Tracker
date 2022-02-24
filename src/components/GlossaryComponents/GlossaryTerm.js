@@ -8,7 +8,7 @@ export const GlossaryTerm = (props) => {
       sx={{
         display: "flex",
         pb: { xs: 4 },
-        width: { xs: "100%", md: "50%" },
+        width: { xs: "100%", md: "70%" },
       }}
     >
       <Box
@@ -25,16 +25,18 @@ export const GlossaryTerm = (props) => {
           <Box
             sx={{
               fontSize: { xs: 30 },
+              fontWeight: 600,
               color: "primary.main",
               textAlign: "center",
               pr: { xs: 3 },
               backgroundColor: "#f4f4f4",
             }}
+            id={name}
           >
-            {name}:
+            {name}
           </Box>
           <Box sx={{ textAlign: "center" }}>
-            <img src={image} alt={name} style={{ maxWidth: "100%" }} />
+            <img src={image} alt={name} />
           </Box>
         </Box>
         <Box

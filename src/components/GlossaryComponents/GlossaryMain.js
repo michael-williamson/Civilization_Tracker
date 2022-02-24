@@ -1,15 +1,28 @@
 import React from "react";
 import { Box } from "@mui/system";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import glossaryTerms from "../../data/glossaryTerms.json";
 import { GlossaryTerm } from "./GlossaryTerm";
+import { GlossaryTermList } from "./GlossaryTermList";
+import { ExpandMore } from "@mui/icons-material";
 
 const glossaryTermsList = () => {
-  return glossaryTerms.map((item) => {
+  const sortedArray = glossaryTerms.sort(function (a, b) {
+    let textA = a.name.toUpperCase();
+    let textB = b.name.toUpperCase();
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
+  });
+
+  return sortedArray.map((item) => {
+    if (item.name === "") return null;
     return (
       <GlossaryTerm
         name={item.name}
         image={item.image}
         definition={item.definition}
+        key={item.name}
       />
     );
   });
@@ -29,6 +42,20 @@ export const GlossaryMain = () => {
       >
         Glossary
       </Box>
+      <Accordion>
+        <AccordionSummary
+          expandIcon={<ExpandMore color="primary" />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Box sx={{ color: "primary.main", fontWeight: "bold" }}>
+            List of Terms
+          </Box>
+        </AccordionSummary>
+        <AccordionDetails>
+          <GlossaryTermList />
+        </AccordionDetails>
+      </Accordion>
       <Box
         sx={{
           display: "flex",

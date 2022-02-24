@@ -143,24 +143,24 @@
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "City-state",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Ruins_near_the_ziggurat_of_Kish_at_Tell_al-Uhaymir%2C_Mesopotamia%2C_Babel_Governorate%2C_Iraq.jpg/256px-Ruins_near_the_ziggurat_of_Kish_at_Tell_al-Uhaymir%2C_Mesopotamia%2C_Babel_Governorate%2C_Iraq.jpg",
+        "definition": "A City-state is an independent city that serves as the central location for political, economic, and cultural life over its contiguous territory.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Ruins_near_the_ziggurat_of_Kish_at_Tell_al-Uhaymir,_Mesopotamia,_Babel_Governorate,_Iraq.jpg",
         "imageAttribution": {
-            "author": "",
+            "author": "Osama Shukir Muhammed Amin FRCP(Glasg)",
             "domain": "CC BY-SA 4.0",
             "via": "Wikimedia Commons"
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Green Sahara",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Tree_Savannah_%286858485217%29.jpg/256px-Tree_Savannah_%286858485217%29.jpg",
+        "definition": "Due to the varying patterns of Earth's orbit and rotation that occur over thousands of years,  there are periods of time where the Earth receives much more solar radiation comparatively.  Over the Northern region of the African continent,  this increased solar radiation would have created a less dense hot air mass over the continent creating a inward flow of moisture from the atlantic of a cooler more dense air mass.  This brought cycles of increased precipitation lasting thousands of years that would have turned the modern day Sahara into a green Savannah type landscape.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Tree_Savannah_(6858485217).jpg",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "Chris Eason",
+            "domain": "CC BY-SA 2.0",
             "via": "Wikimedia Commons"
         }
     },
