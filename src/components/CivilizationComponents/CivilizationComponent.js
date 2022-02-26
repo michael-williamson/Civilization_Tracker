@@ -22,7 +22,7 @@ const commonStyles = {
   fontWeight: "bold",
   py: { xs: 4 },
   px: { xs: 4 },
-  "& div:first-child": {
+  "& div:first-of-type": {
     color: "primary.main",
     background: "white",
     borderRadius: 1,
@@ -30,7 +30,7 @@ const commonStyles = {
     py: { xs: 1 },
     fontSize: { xs: 30 },
   },
-  "& div:nth-child(2)": { textAlign: "center", py: { xs: 1 } },
+  "& div:nth-of-type(2)": { textAlign: "center", py: { xs: 1 } },
 };
 
 export const CivilizationComponent = (props) => {
