@@ -7,6 +7,7 @@ import { GlossaryMain } from "./components/GlossaryComponents/GlossaryMain";
 import { ChartPage } from "./components/ChartComponents/ChartPage";
 import { routes } from "../src/routes/index";
 import { WelcomeComponent } from "./components/MainComponents/WelcomeComponent";
+import { CivilizationPage } from "./components/CivilizationComponents/CivilizationPage";
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
       <Routes>
         <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
         <Route exact path={routes.Map} element={<GoogleMap />} />
+        <Route
+          exact
+          path={routes.Civilizations}
+          element={<CivilizationPage />}
+        />
         <Route exact path={routes.Glossary} element={<GlossaryMain />} />
         <Route exact path={routes.Charts} element={<ChartPage />} />
       </Routes>
