@@ -1,59 +1,14 @@
 import React from "react";
 import { Box } from "@mui/system";
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
-
-function srcset(image, size, rows = 1, cols = 1) {
-  return {
-    src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
-    srcSet: `${image}?w=${size * cols}&h=${
-      size * rows
-    }&fit=crop&auto=format&dpr=2 2x`,
-  };
-}
-
-const imageArrFN = (item) => {
-  return item.images.map((item, index) => {
-    if (index === 0) {
-      item.row = 2;
-      item.col = 2;
-    } else if (index > 0 && index < 3) {
-      item.row = 0;
-      item.col = 0;
-    } else if (index >= 3) {
-      item.row = 1;
-      item.col = 2;
-    }
-    return item;
-  });
-};
+import { ImageListComponent } from "../ReusableComponents/ImageListComponent";
 
 export const CivilizationsInfoWindow = (props) => {
   const { item } = props;
-  const imageArr = imageArrFN(item);
+
   return (
     <Box>
       <Box sx={{ textAlign: "center" }}>
-        <ImageList
-          sx={{ height: 450 }}
-          variant="quilted"
-          cols={4}
-          rowHeight={256}
-        >
-          {imageArr.map((item, index) => (
-            <ImageListItem
-              key={index}
-              cols={item.col || 1}
-              rows={item.row || 1}
-            >
-              <img
-                {...srcset(item.display, 256, item.row, item.col)}
-                alt={item.name}
-                loading="lazy"
-              />
-            </ImageListItem>
-          ))}
-        </ImageList>
+        <ImageListComponent item={item} />
       </Box>
       <Box
         sx={{

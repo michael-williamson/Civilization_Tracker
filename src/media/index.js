@@ -5,6 +5,11 @@ import hayIcon from "./map icons/hay.png";
 import pyramidIcon from "./map icons/pyramid.png";
 import headerThumb from "./bgImages/headerThumb.jpg";
 import sunriseAgriculture from "./bgImages/sunrise_agriculture.jpg";
+import sumerMap from "./civilizationMap/sumerMap.png";
+
+const onFile = {
+  sumerMap: { display: sumerMap, alt: "Sumer" },
+};
 
 export {
   civIcon,
@@ -14,4 +19,5 @@ export {
   potteryIcon,
   hayIcon,
   pyramidIcon,
+  onFile,
 };

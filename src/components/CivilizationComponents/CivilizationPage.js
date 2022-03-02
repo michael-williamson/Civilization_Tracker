@@ -28,7 +28,15 @@ export const CivilizationPage = () => {
   const [civilization, setCivilization] = useState(null);
 
   return (
-    <Box sx={{ display: "grid", rowGap: 4 }}>
+    <Box
+      sx={{
+        display: "grid",
+        rowGap: 4,
+        justifyItems: "center",
+        width: { xs: "100%", md: "70%" },
+        mx: { md: "auto" },
+      }}
+    >
       <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
         <Box
           sx={{

@@ -7,7 +7,22 @@
             "lat": 32,
             "long": 46
         },
-        "locationDescription": "",
+        "locationDescription": {
+            "onFile": "sumerMap",
+            "images": [
+                {
+                    "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumer_satellite_map.jpg",
+                    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sumer_satellite_map.jpg/256px-Sumer_satellite_map.jpg",
+                    "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Sumer_satellite_map.jpg/512px-Sumer_satellite_map.jpg",
+                    "attribution": {
+                        "author": "NASA",
+                        "domain": "Public Domain",
+                        "via": "Wikimedia Commons"
+                    }
+                }
+            ],
+            "summary": "Located in a distinct plain in between Tigris and Euphrates rivers"
+        },
         "images": [
             {
                 "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumerian_portrait_statuette_of_a_woman_02.jpg",
@@ -102,6 +117,12 @@
                 "linkToInfo": "",
                 "description": ""
             }
-        ]
+        ],
+        "tags": {
+            "resources": [
+                "wheat",
+                "barley"
+            ]
+        }
     }
 ]
