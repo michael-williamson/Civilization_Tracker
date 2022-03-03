@@ -69,12 +69,12 @@
         "summary": "One of the first civilizations in the world,  Sumer was located in Southern Mesopotamia (modern day south central Iraq).  Sumerians referred to their land as Kengir, 'Country of the noble lords',  and also referred to themselves as 'Black Headed Ones'.  Historians suggest that Sumer was first permanently settled between 5500 and 4000 BC by a West Asian people,  others have suggested that origins could have come from North Africans who migrated from the Green Sahara.  As the Sumer civilization developed it consisted of independent city-states divided by canals and boundary stones.  At its height, Sumer is thought to have had a population between 0.5 and 1.8 million.",
         "language": "The Sumerians had a rich and vibrant spoken and written language which is called simply Sumerian.  They used a form of writing called cuneiform script.  They used clay tablets to record their texts for a variety of purposes. business letters; receipts; laws; stories; religious songs; prayers; and daily records.  Sumerian is regarded as a language isolate, meaning that it belongs to no known language family.",
         "timeMeasurement": "The Sumerians measured time by lunar months",
-        "cultureDescription": "",
+        "cultureDescription": "Pottery was a staple of the Sumerian culture used in all applications of life.  Sumerians appreciated jewelry and decorative items.  Items such as head-dresses that were feathered and carved furniture are examples of this.  Necklace or collars were often made of gold.  Various musical instruments were present as well as lyrics inscribed on tablets.  Sumerian culture was male-dominated.  There were two stratas made up of 'free persons' and slaves.  Arranged marriages took place being orchestrated by the parents of the bride and groom.  Sumerians discouraged premarital sex and as marriages were lifelong if a woman became a widow she could remarry.",
         "religion": "It was believed that creation was the result of a series of hieroi gamoi or sacred marriages between male and female divine beings.  The subjects of these marriages were Earthly concepts such as the marriage between the Earth and the Sky or a marriage between 'Lady of the mountains' and the god of fresh water.  The city of Nippur served as the primary temple city.  Afterlife was thought to consist of living in the underworld as a Gidim or ghost assigned by goddess to a location.",
         "cosmology": "Their idea of the universe was that it consisted of a flat disk enclosed by a dome and that it consisted of four parts which were located in the four cardinal directions. North; East; South; and West;  Each part was inhabited by the people in those regions of the time.  ",
         "resources": "Sumerians depended on the Tigris and Euphrates river as a source for crop irrigation.  They dug canal systems along with building dykes and creating reservoirs.  Crops were plentiful and of variety like barley, lentils, wheat, onions, garlic, lettuce, and mustard.  Animal domestication consisted of sheep, goats, cattle, and pigs.  Fishing was common as well as hunting water fowl and gazelle.",
-        "trade": "",
-        "military": "",
+        "trade": "Discovery of resources originated in far reaching places signifies that Sumerians had a robust trade with groups as far as what is now modern day Turkey, Afghanistan,  the Indus Valley near India and Pakistan.  Trade with these locations included obsidian from Anatolia, lapis lazuli from the Afghanistan region, and cedar wood from Lebanon.  Seals that have been inscribed by Indus Valley Script have been found.  A form of banking was established with barley and silver as the standard of how values were assigned.",
+        "military": "City-states in Sumer were often at war with one another.  Infantry wore copper helmets, used spears, had rectangular shields, and fought in a phalanx formation.  This implies advanced military knowledge and strategy.  Primitive chariots were used but mostly for logistics purpose.  Cities often had defensive walls and seige warfare was common.",
         "cities": [
             {
                 "name": "Sumer",
@@ -122,6 +122,9 @@
             "resources": [
                 "wheat",
                 "barley"
+            ],
+            "military": [
+                "phalanx"
             ]
         }
     }

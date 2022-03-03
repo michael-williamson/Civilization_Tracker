@@ -174,13 +174,13 @@
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Phalanx",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Makedonische_phalanx.png",
+        "definition": "A military formation requiring infantry to form a large rectangular group protruding with long spears held by each member.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Makedonische_phalanx.png",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "F. Mitchell, Department of History, United States Military Academy",
+            "domain": "Public Domain",
             "via": "Wikimedia Commons"
         }
     },

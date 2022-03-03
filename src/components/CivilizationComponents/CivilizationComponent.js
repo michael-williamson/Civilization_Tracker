@@ -92,12 +92,15 @@ const processTags = (item) => {
 
 const commonStyles = {
   display: "flex",
-  flexWrap: "wrap",
+  flexWrap: "nowrap",
+  flexDirection: "column",
   alignItems: "center",
   justifyContent: "space-around",
   py: { xs: 4 },
   px: { xs: 4 },
   bgcolor: "primary.main",
+  width: { md: "fit-content" },
+  borderRadius: 2,
 };
 
 const labelStyles = {
@@ -143,10 +146,10 @@ export const CivilizationComponent = (props) => {
     military,
   } = item;
   return (
-    <Box sx={{ display: "grid", rowGap: 4 }}>
+    <Box sx={{ display: "grid", rowGap: 4, justifyItems: "center" }}>
       <Box sx={{ ...commonStyles }}>
         <Box sx={{ ...labelStyles }}>Civilization Name:</Box>{" "}
-        <Box sx={{ ...textStyles }}>{name}</Box>
+        <Box sx={{ ...textStyles, fontSize: { md: 50 } }}>{name}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
         <Box sx={{ ...labelStyles }}>Location:</Box>

@@ -5,22 +5,34 @@ import { CivilizationComponent } from "./CivilizationComponent";
 
 const civilizationsMenu = (setCivilization) => {
   return civilizationsJson.map((item) => (
-    <Box
-      sx={{
-        fontSize: { xs: 20 },
-        px: { xs: 4 },
-        py: { xs: 2 },
-        borderRadius: 2,
-        color: "white",
-        bgcolor: "primary.main",
-        cursor: "pointer",
-        fontWeight: "bold",
-      }}
-      onClick={() => setCivilization(item.name)}
-      key={item.name}
-    >
-      {item.name}
-    </Box>
+    <>
+      <Box
+        sx={{
+          bgcolor: "primary.main",
+          px: { xs: 4 },
+          py: { xs: 2 },
+          borderRadius: 2,
+          textAlign: "center",
+          cursor: "pointer",
+        }}
+        onClick={() => setCivilization(item.name)}
+        key={item.name}
+      >
+        <Box
+          sx={{
+            fontSize: { xs: 20 },
+            color: "white",
+            fontWeight: "bold",
+            pb: { md: 1 },
+          }}
+        >
+          {item.name}
+        </Box>
+        <Box>
+          <img src={item.images[0].thumbnail} alt={item.name} width="100px" />
+        </Box>
+      </Box>
+    </>
   ));
 };
 
@@ -35,9 +47,19 @@ export const CivilizationPage = () => {
         justifyItems: "center",
         width: { xs: "100%", md: "70%" },
         mx: { md: "auto" },
+        pb: { md: 8 },
       }}
     >
-      <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center" }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          borderBottom: "6px solid #1976d2",
+          pb: { md: 4 },
+          width: { md: "100%" },
+        }}
+      >
         <Box
           sx={{
             color: "primary.main",
