@@ -185,35 +185,35 @@
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Cuneiform",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Cuneiform_tablet-_fragment_of_a_table_of_reciprocals_MET_ME86_11_410.jpg/256px-Cuneiform_tablet-_fragment_of_a_table_of_reciprocals_MET_ME86_11_410.jpg",
+        "definition": "One of the earliest writing systems.  Cuneiform is a script that used characters and symbols to represent words, and was created by the Sumerians and then used to write several languages of the Ancient Near East.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Cuneiform_tablet-_fragment_of_a_table_of_reciprocals_MET_ME86_11_410.jpg",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "Metropolitan Museum of Art",
+            "domain": "CC0",
             "via": "Wikimedia Commons"
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Alluvium",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Alluvium_%26_grass_in_desert_river_valley._Mid_Atlas_%2823903063428%29.jpg/256px-Alluvium_%26_grass_in_desert_river_valley._Mid_Atlas_%2823903063428%29.jpg",
+        "definition": "Alluvium can consist of multiple forms such as clay, silt, sand, or gravel that has been deposited by running water.  Often seen in floodplains,  it is highly fertile soil and was attractive to humans looking to settle in a given location.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Alluvium_%26_grass_in_desert_river_valley._Mid_Atlas_(23903063428).jpg",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "Dr Mary Gillham Archive Project",
+            "domain": "CC BY-SA 2.0",
             "via": "Wikimedia Commons"
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Sedentism",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/0/05/Rice_farming.jpg",
+        "definition": "The practice of living in one place for an extended period of time.  Sedentism was the paradigm shift seen in ancient people adapting a farming based lifestyle instead of the hunter gatherer it was preceded by.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Rice_farming.jpg",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "unknown",
+            "domain": "Public Domain",
             "via": "Wikimedia Commons"
         }
     },

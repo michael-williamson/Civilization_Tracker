@@ -42,17 +42,18 @@ export const GlossaryMain = () => {
       >
         Glossary
       </Box>
-      <Accordion>
+      <Accordion sx={{ boxShadow: "none" }}>
         <AccordionSummary
           expandIcon={<ExpandMore color="primary" />}
           aria-controls="panel1a-content"
           id="panel1a-header"
+          sx={{ borderBottom: "4px solid #1976d238", pd: { md: 2 } }}
         >
           <Box sx={{ color: "primary.main", fontWeight: "bold" }}>
             List of Terms
           </Box>
         </AccordionSummary>
-        <AccordionDetails>
+        <AccordionDetails sx={{ border: 0 }}>
           <GlossaryTermList />
         </AccordionDetails>
       </Accordion>
@@ -62,6 +63,7 @@ export const GlossaryMain = () => {
           justifyContent: "center",
           flexDirection: "column",
           alignItems: "center",
+          pt: { xs: 4 },
           pb: { xs: 4 },
         }}
       >

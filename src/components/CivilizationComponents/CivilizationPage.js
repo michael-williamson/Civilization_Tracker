@@ -4,8 +4,8 @@ import civilizationsJson from "../../data/civilizations.json";
 import { CivilizationComponent } from "./CivilizationComponent";
 
 const civilizationsMenu = (setCivilization) => {
-  return civilizationsJson.map((item) => (
-    <>
+  return civilizationsJson.map((item, index) => (
+    <Box key={index}>
       <Box
         sx={{
           bgcolor: "primary.main",
@@ -16,7 +16,6 @@ const civilizationsMenu = (setCivilization) => {
           cursor: "pointer",
         }}
         onClick={() => setCivilization(item.name)}
-        key={item.name}
       >
         <Box
           sx={{
@@ -32,7 +31,7 @@ const civilizationsMenu = (setCivilization) => {
           <img src={item.images[0].thumbnail} alt={item.name} width="100px" />
         </Box>
       </Box>
-    </>
+    </Box>
   ));
 };
 
@@ -71,7 +70,7 @@ export const CivilizationPage = () => {
         >
           Choose a Civilization:
         </Box>
-        {civilizationsMenu(setCivilization)}
+        <Box>{civilizationsMenu(setCivilization)}</Box>
       </Box>
       {civilization && (
         <CivilizationComponent

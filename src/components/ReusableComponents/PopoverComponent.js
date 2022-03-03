@@ -22,7 +22,7 @@ export const PopoverComponent = (props) => {
         aria-haspopup="true"
         onMouseEnter={handlePopoverOpen}
         onMouseLeave={handlePopoverClose}
-        sx={{ color: "#7eff94" }}
+        sx={{ color: "warning.main" }}
         component="span"
       >
         {tag}

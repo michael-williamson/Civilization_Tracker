@@ -19,7 +19,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Tower_of_Jericho",
-        "description": "One of the world's first major proto-cities.  Towers of Jericho consisted of mud-brick houses that were circular built of clay and straw bricks.  Estimates of the population vary from a few hundred to a few thousand.  The proto-city was surrounded by a 12 ft wall and inside stood a stone tower known as the Tower of Jericho."
+        "summary": "One of the world's first major proto-cities.  Towers of Jericho consisted of mud-brick houses that were circular built of clay and straw bricks.  Estimates of the population vary from a few hundred to a few thousand.  The proto-city was surrounded by a 12 ft wall and inside stood a stone tower known as the Tower of Jericho."
     },
     {
         "name": "Gobekli Tepe",
@@ -61,7 +61,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/G%C3%B6bekli_Tepe",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "Bhirrana",
@@ -93,7 +93,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Bhirrana",
-        "description": "Bhirrana culture used subterranean dwellings where the walls were plastered with a yellowish alluvium.  Interesting artifacts such as copper arrowheads and beads of camelian.  Lapis lazul ornaments were a part of the artistics design.  They decorated pottery with various paintings and colors."
+        "summary": "Bhirrana culture used subterranean dwellings where the walls were plastered with a yellowish alluvium.  Interesting artifacts such as copper arrowheads and beads of camelian.  Lapis lazul ornaments were a part of the artistics design.  They decorated pottery with various paintings and colors."
     },
     {
         "name": "Atlit Yam",
@@ -115,7 +115,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Atlit_Yam",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "Almendres Cromlech",
@@ -137,7 +137,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Almendres_Cromlech",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "Barnenez",
@@ -159,7 +159,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Barnenez",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "Tumulus of Bougon",
@@ -181,7 +181,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Tumulus_of_Bougon",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "Nanzhuangtou",
@@ -203,7 +203,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Nanzhuangtou",
-        "description": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
+        "summary": "Earliest known Neolithic site in northern China.  The site contains pottery, evidence of domesticated dogs, and millet cultivation"
     },
     {
         "name": "Tumulus of Bougon",
@@ -287,7 +287,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Franchthi_Cave",
-        "description": "Franchthi Cave shows signs of human habitation dating back 40,000 years and possibly more.  Human habitation began showing signs of neolithic culture around 9000 years ago or 7000 BC.  Showing some of the earliest evidence of agriculture in Greece,  It is believed that the agricultural practice was brought to these inhabitants by cultures of the Near East."
+        "summary": "Franchthi Cave shows signs of human habitation dating back 40,000 years and possibly more.  Human habitation began showing signs of neolithic culture around 9000 years ago or 7000 BC.  Showing some of the earliest evidence of agriculture in Greece,  It is believed that the agricultural practice was brought to these inhabitants by cultures of the Near East."
     },
     {
         "name": "Cishan culture",
@@ -319,7 +319,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Cishan_culture",
-        "description": "Cishan Culture was a neolithic culture in northern China that existed from 6500 BC until 5000 BC.  Located in the foothills of the Talhang Mountains, the Cishan Culture farmed different types of millet.  Pottery has been found along with stone grinders used to grind millet.  This culture is said to be a link to the Sino-Tibetan language family"
+        "summary": "Cishan Culture was a neolithic culture in northern China that existed from 6500 BC until 5000 BC.  Located in the foothills of the Talhang Mountains, the Cishan Culture farmed different types of millet.  Pottery has been found along with stone grinders used to grind millet.  This culture is said to be a link to the Sino-Tibetan language family"
     },
     {
         "name": "Sesklo",
@@ -351,7 +351,7 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Sesklo",
-        "description": "Earliest known settlement in Europe.  Evidence of domesticated cattle, along with farming of Wheat and Barley.  At around 5000 BC it is estimated that the population was around 5,000 and that the Sesklo settlement consisted of 500-800 houses."
+        "summary": "Earliest known settlement in Europe.  Evidence of domesticated cattle, along with farming of Wheat and Barley.  At around 5000 BC it is estimated that the population was around 5,000 and that the Sesklo settlement consisted of 500-800 houses."
     },
     {
         "name": "",
@@ -393,7 +393,7 @@
             }
         ],
         "linkToInfo": "",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "",
@@ -435,7 +435,7 @@
             }
         ],
         "linkToInfo": "",
-        "description": ""
+        "summary": ""
     },
     {
         "name": "",
@@ -477,6 +477,6 @@
             }
         ],
         "linkToInfo": "",
-        "description": ""
+        "summary": ""
     }
 ]

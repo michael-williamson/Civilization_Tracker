@@ -4,6 +4,10 @@ import ImageListItem from "@mui/material/ImageListItem";
 
 // designed to display images from images on file or from fetching images via https protocol.
 
+// there is a function in the main directory of src folder that allows this component to accept dynamic input
+// in order to arrange images according to desired layout,  run the function in parent component of ImageListComponent
+// and attach as a property to ImageListComponent.  See CivilizationComponent for example
+
 function srcset(image, size, rows = 1, cols = 1) {
   return {
     src: `${image}?w=${size * cols}&h=${size * rows}&fit=crop&auto=format`,
@@ -13,12 +17,12 @@ function srcset(image, size, rows = 1, cols = 1) {
   };
 }
 
-const configuration = (size) => {
+const configuration = (size, config, cols) => {
   //configuration for tiled image layout
   let configObject;
-  const height = 450;
+  const height = "initial";
   const rowHeight = 100;
-  const cols = 2;
+  const { sm, md, lg } = config;
   switch (size) {
     case "sm":
       configObject = {
@@ -28,9 +32,7 @@ const configuration = (size) => {
           cols: cols,
         },
         imageTiling: {
-          first: { row: 2, col: 2 },
-          second: { row: 0, col: 0 },
-          remaining: { row: 1, col: 2 },
+          ...sm,
         },
       };
       break;
@@ -39,12 +41,10 @@ const configuration = (size) => {
         imageListDimensions: {
           height: height,
           rowHeight: rowHeight,
-          cols: cols + 2,
+          cols: cols,
         },
         imageTiling: {
-          first: { row: 4, col: 4 },
-          second: { row: 2, col: 4 },
-          remaining: { row: 1, col: 2 },
+          ...md,
         },
       };
       break;
@@ -53,12 +53,10 @@ const configuration = (size) => {
         imageListDimensions: {
           height: height,
           rowHeight: rowHeight,
-          cols: cols + 2,
+          cols: cols,
         },
         imageTiling: {
-          first: { row: 4, col: 2 },
-          second: { row: 4, col: 2 },
-          remaining: { row: 1, col: 2 },
+          ...lg,
         },
       };
       break;
@@ -67,12 +65,10 @@ const configuration = (size) => {
         imageListDimensions: {
           height: height,
           rowHeight: rowHeight,
-          cols: cols + 2,
+          cols: cols,
         },
         imageTiling: {
-          first: { row: 4, col: 4 },
-          second: { row: 1, col: 4 },
-          remaining: { row: 1, col: 2 },
+          ...lg,
         },
       };
   }
@@ -90,26 +86,39 @@ const imageArrFN = (item, onFile = null, onFileObject = null, configObject) => {
     });
 
   const {
-    imageTiling: { first, second, remaining },
+    imageTiling: { first, second, third, fourth },
   } = configObject;
+
   return imagesArr.map((item, index) => {
-    if (index === 0) {
-      item.row = first.row;
-      item.col = first.col;
-    } else if (index > 0 && index < 3) {
-      item.row = second.row;
-      item.col = second.col;
-    } else if (index >= 3) {
-      item.row = remaining.row;
-      item.col = remaining.col;
+    switch (index) {
+      case 0:
+        item.row = first.row;
+        item.col = first.col;
+        break;
+      case 1:
+        item.row = second.row;
+        item.col = second.col;
+        break;
+      case 2:
+        item.row = third.row;
+        item.col = fourth.col;
+        break;
+      case 3:
+        item.row = fourth.row;
+        item.col = fourth.col;
+        break;
+      default:
+        item.row = fourth.row;
+        item.col = fourth.col;
     }
+
     return item;
   });
 };
 
 export const ImageListComponent = (props) => {
-  const { item, onFile, onFileObject, size } = props;
-  const configObject = configuration(size);
+  const { item, onFile, onFileObject, size, config, cols } = props;
+  const configObject = configuration(size, config, cols);
   const imageArr = imageArrFN(item, onFile, onFileObject, configObject);
   return (
     <ImageList

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { GoogleMap, useLoadScript } from "@react-google-maps/api";
+import { useMediaQuery } from "@mui/material";
 import { Box } from "@mui/system";
 import { MapMarkers } from "./MapMarkers";
 import { InfoWindowDisplay } from "./InfoWindowDisplay";
@@ -33,6 +34,13 @@ function MapComponent(props) {
 
   const [jsonIndex, setJsonIndex] = useState(null);
   const [currentInfoWindow, setCurrentInfoWindow] = useState(null);
+
+  const matchesMD = useMediaQuery("(min-width:600px)");
+  const matchesLG = useMediaQuery("(min-width:1020px)");
+  let size =
+    (!matchesMD && !matchesLG && "sm") || (matchesMD && matchesLG)
+      ? "lg"
+      : "md";
 
   if (loadError) {
     return <div>Map cannot be loaded right now, sorry.</div>;
@@ -72,6 +80,7 @@ function MapComponent(props) {
             currentInfoWindow={currentInfoWindow}
             setCurrentInfoWindow={setCurrentInfoWindow}
             dataArr={dataArr[currentInfoWindow]}
+            size={size}
           />
         )}
       </GoogleMap>

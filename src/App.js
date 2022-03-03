@@ -21,8 +21,9 @@ function App() {
           path={routes.Civilizations}
           element={<CivilizationPage />}
         />
-        <Route exact path={routes.Glossary} element={<GlossaryMain />} />
+
         <Route exact path={routes.Charts} element={<ChartPage />} />
+        <Route exact path={routes.Glossary} element={<GlossaryMain />} />
       </Routes>
     </div>
   );

@@ -1,10 +1,12 @@
 import React from "react";
 import { Box } from "@mui/system";
+import { ImageListComponent } from "../ReusableComponents/ImageListComponent";
+import { imageScreenSizeObject } from "../../helperFunctions";
 
 const sharedStylingFieldContainer = { pb: { xs: 2, md: 2 } };
 
 export const SitesInfoWindow = (props) => {
-  const { item } = props;
+  const { item, size } = props;
   return (
     <Box>
       <Box
@@ -18,10 +20,35 @@ export const SitesInfoWindow = (props) => {
         {item.name}
       </Box>
       <Box sx={{ textAlign: "center" }}>
-        <img
-          src={item.images[0].display}
-          alt={item.name}
-          style={{ border: "10px groove black" }}
+        <ImageListComponent
+          item={item}
+          size={size}
+          config={{
+            ...{
+              ...imageScreenSizeObject(
+                "sm",
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "md",
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "lg",
+                { row: 4, col: 2 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 4, col: 6 }
+              ),
+            },
+          }}
+          cols={8}
         />
       </Box>
       <Box sx={{ py: { xs: 4 } }}>
@@ -57,7 +84,7 @@ export const SitesInfoWindow = (props) => {
               textAlign: "center",
             }}
           >
-            {item.description}
+            {item.summary}
           </Box>
         </Box>
         <Box

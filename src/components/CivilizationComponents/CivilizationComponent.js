@@ -6,6 +6,7 @@ import { useMediaQuery } from "@mui/material";
 import { onFile } from "../../media";
 import { GlossaryTerm } from "../GlossaryComponents/GlossaryTerm";
 import glossaryTerms from "../../data/glossaryTerms.json";
+import { imageScreenSizeObject } from "../../helperFunctions";
 
 const findCivilization = (civilization, civilizationsJson) => {
   return civilizationsJson.find((item) => {
@@ -31,7 +32,7 @@ const popoverStyles = {
   },
 };
 
-const addTags = (arr, text, tags) => {
+const addTags = (arr, text, tags, keyIndex) => {
   // parses text finding glossary terms by order of precedence, wrapping them in a visible popup
   let remainingText;
   let indexStart = -1;
@@ -54,20 +55,32 @@ const addTags = (arr, text, tags) => {
   tagFN(tags);
 
   if (indexStart === -1) {
-    arr.push(<Box component="span">{text}</Box>);
+    keyIndex += 1;
+    arr.push(
+      <Box component="span" key={keyIndex}>
+        {text}
+      </Box>
+    );
     return arr;
   }
 
   let length = tag.length;
   let string = text.substring(0, indexStart);
-  let stringHtml = <Box component="span">{string}</Box>;
+  keyIndex += 1;
+  let stringHtml = (
+    <Box component="span" key={keyIndex}>
+      {string}
+    </Box>
+  );
 
   const glossaryTermObject = glossaryTermObjectFN(tag);
   const { name, image, definition } = glossaryTermObject;
 
   //feature allows a popover when hovering over term in text
+  keyIndex += 1;
   let tagAnchor = (
     <PopoverComponent
+      key={keyIndex}
       tag={tag}
       displayComponent={
         <GlossaryTerm name={name} image={image} definition={definition} />
@@ -79,13 +92,13 @@ const addTags = (arr, text, tags) => {
   indexStart !== -1 && arr.push(tagAnchor);
   remainingText = text.substring(indexStart + length, text.length);
 
-  return addTags(arr, remainingText, tags);
+  return addTags(arr, remainingText, tags, keyIndex);
 };
 
 //returns new item object with react component assembled for affected properties
 const processTags = (item) => {
   for (const prop in item.tags) {
-    item[prop] = addTags([], item[prop], item.tags[prop]);
+    item[prop] = addTags([], item[prop], item.tags[prop], 0);
   }
   return item;
 };
@@ -98,14 +111,12 @@ const commonStyles = {
   justifyContent: "space-around",
   py: { xs: 4 },
   px: { xs: 4 },
-  bgcolor: "primary.main",
   width: { md: "fit-content" },
   borderRadius: 2,
 };
 
 const labelStyles = {
   color: "primary.main",
-  background: "white",
   borderRadius: 1,
   px: { xs: 1 },
   py: { xs: 1 },
@@ -118,7 +129,7 @@ const textStyles = {
   py: { xs: 1 },
   fontSize: { xs: 20 },
   fontWeight: "bold",
-  color: "white",
+  color: "primary.main",
 };
 
 export const CivilizationComponent = (props) => {
@@ -159,11 +170,70 @@ export const CivilizationComponent = (props) => {
           onFile={locationDescription.onFile}
           onFileObject={onFile}
           size={size}
+          config={{
+            ...{
+              ...imageScreenSizeObject(
+                "sm",
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "md",
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "lg",
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 }
+              ),
+            },
+          }}
+          cols={8}
         />
       </Box>
       <Box sx={{ ...commonStyles }}>
         <Box sx={{ ...labelStyles }}>Time Period:</Box>{" "}
         <Box sx={{ ...textStyles }}>{timePeriod}</Box>
+      </Box>
+      <Box sx={{ ...commonStyles }}>
+        <Box sx={{ ...labelStyles }}>Gallery</Box>
+        <ImageListComponent
+          item={item}
+          size={size}
+          config={{
+            ...{
+              ...imageScreenSizeObject(
+                "sm",
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "md",
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "lg",
+                { row: 4, col: 2 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 4, col: 2 }
+              ),
+            },
+          }}
+          cols={8}
+        />
       </Box>
       <Box sx={{ ...commonStyles }}>
         <Box sx={{ ...labelStyles }}>Summary:</Box>{" "}

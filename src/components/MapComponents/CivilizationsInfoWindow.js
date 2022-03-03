@@ -1,14 +1,44 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { ImageListComponent } from "../ReusableComponents/ImageListComponent";
+import { imageScreenSizeObject } from "../../helperFunctions";
 
 export const CivilizationsInfoWindow = (props) => {
-  const { item } = props;
+  const { item, size } = props;
 
   return (
     <Box>
       <Box sx={{ textAlign: "center" }}>
-        <ImageListComponent item={item} />
+        <ImageListComponent
+          item={item}
+          size={size}
+          config={{
+            ...{
+              ...imageScreenSizeObject(
+                "sm",
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "md",
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 },
+                { row: 4, col: 4 }
+              ),
+              ...imageScreenSizeObject(
+                "lg",
+                { row: 4, col: 2 },
+                { row: 2, col: 4 },
+                { row: 2, col: 4 },
+                { row: 4, col: 6 }
+              ),
+            },
+          }}
+          cols={8}
+        />
       </Box>
       <Box
         sx={{
@@ -55,7 +85,7 @@ export const CivilizationsInfoWindow = (props) => {
             color: "white",
           }}
         >
-          {item.description}
+          {item.summary}
         </Box>
         <Box
           sx={{
