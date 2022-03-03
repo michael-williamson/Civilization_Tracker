@@ -1,8 +1,11 @@
 import React from "react";
 import { ImageListComponent } from "../ReusableComponents/ImageListComponent";
+import { PopoverComponent } from "../ReusableComponents/PopoverComponent";
 import { Box } from "@mui/system";
 import { useMediaQuery } from "@mui/material";
 import { onFile } from "../../media";
+import { GlossaryTerm } from "../GlossaryComponents/GlossaryTerm";
+import glossaryTerms from "../../data/glossaryTerms.json";
 
 const findCivilization = (civilization, civilizationsJson) => {
   return civilizationsJson.find((item) => {
@@ -14,10 +17,26 @@ const findCivilization = (civilization, civilizationsJson) => {
   });
 };
 
+const glossaryTermObjectFN = (tag) => {
+  return glossaryTerms.find(
+    (item) => item.name.toLowerCase() === tag.toLowerCase()
+  );
+};
+
+//used GlossaryTerm component within the popover but needed to override styles to suit the popover
+const popoverStyles = {
+  width: "70%",
+  "& .MuiPaper-root .MuiBox-root": {
+    width: { md: "100%", pb: { md: 0 } },
+  },
+};
+
 const addTags = (arr, text, tags) => {
+  // parses text finding glossary terms by order of precedence, wrapping them in a visible popup
   let remainingText;
   let indexStart = -1;
   let tag = "";
+  //if multiple tags searches for the first occurring
   const tagFN = (tags) => {
     let currentIndex;
     for (const item of tags) {
@@ -35,17 +54,26 @@ const addTags = (arr, text, tags) => {
   tagFN(tags);
 
   if (indexStart === -1) {
-    arr.push(<span>{text}</span>);
+    arr.push(<Box component="span">{text}</Box>);
     return arr;
   }
 
   let length = tag.length;
   let string = text.substring(0, indexStart);
-  let stringHtml = <span>{string}</span>;
+  let stringHtml = <Box component="span">{string}</Box>;
+
+  const glossaryTermObject = glossaryTermObjectFN(tag);
+  const { name, image, definition } = glossaryTermObject;
+
+  //feature allows a popover when hovering over term in text
   let tagAnchor = (
-    <a href={`/Glossary`} style={{ color: "#7eff94" }}>
-      {tag}
-    </a>
+    <PopoverComponent
+      tag={tag}
+      displayComponent={
+        <GlossaryTerm name={name} image={image} definition={definition} />
+      }
+      popoverStyles={popoverStyles}
+    />
   );
   arr.push(stringHtml);
   indexStart !== -1 && arr.push(tagAnchor);
@@ -54,6 +82,7 @@ const addTags = (arr, text, tags) => {
   return addTags(arr, remainingText, tags);
 };
 
+//returns new item object with react component assembled for affected properties
 const processTags = (item) => {
   for (const prop in item.tags) {
     item[prop] = addTags([], item[prop], item.tags[prop]);
@@ -66,21 +95,27 @@ const commonStyles = {
   flexWrap: "wrap",
   alignItems: "center",
   justifyContent: "space-around",
-  color: "white",
-  bgcolor: "primary.main",
-  fontSize: 20,
-  fontWeight: "bold",
   py: { xs: 4 },
   px: { xs: 4 },
-  "& div:first-of-type": {
-    color: "primary.main",
-    background: "white",
-    borderRadius: 1,
-    px: { xs: 1 },
-    py: { xs: 1 },
-    fontSize: { xs: 30 },
-  },
-  "& div:nth-of-type(2)": { textAlign: "center", py: { xs: 1 } },
+  bgcolor: "primary.main",
+};
+
+const labelStyles = {
+  color: "primary.main",
+  background: "white",
+  borderRadius: 1,
+  px: { xs: 1 },
+  py: { xs: 1 },
+  fontSize: { xs: 30 },
+  fontWeight: "bold",
+};
+
+const textStyles = {
+  textAlign: "center",
+  py: { xs: 1 },
+  fontSize: { xs: 20 },
+  fontWeight: "bold",
+  color: "white",
 };
 
 export const CivilizationComponent = (props) => {
@@ -110,11 +145,12 @@ export const CivilizationComponent = (props) => {
   return (
     <Box sx={{ display: "grid", rowGap: 4 }}>
       <Box sx={{ ...commonStyles }}>
-        <Box>Civilization Name:</Box> <Box>{name}</Box>
+        <Box sx={{ ...labelStyles }}>Civilization Name:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{name}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Location:</Box>
-        <Box>{locationDescription.summary}</Box>
+        <Box sx={{ ...labelStyles }}>Location:</Box>
+        <Box sx={{ ...textStyles }}>{locationDescription.summary}</Box>
         <ImageListComponent
           item={locationDescription}
           onFile={locationDescription.onFile}
@@ -123,35 +159,45 @@ export const CivilizationComponent = (props) => {
         />
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Time Period:</Box> <Box>{timePeriod}</Box>
+        <Box sx={{ ...labelStyles }}>Time Period:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{timePeriod}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Summary:</Box> <Box>{summary}</Box>
+        <Box sx={{ ...labelStyles }}>Summary:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{summary}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Language Info:</Box> <Box>{language}</Box>
+        <Box sx={{ ...labelStyles }}>Language Info:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{language}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Concept of Time:</Box> <Box>{timeMeasurement}</Box>
+        <Box sx={{ ...labelStyles }}>Concept of Time:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{timeMeasurement}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Religion:</Box> <Box>{religion}</Box>
+        <Box sx={{ ...labelStyles }}>Religion:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{religion}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Cosmology:</Box> <Box>{cosmology}</Box>
+        <Box sx={{ ...labelStyles }}>Cosmology:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{cosmology}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Resources and Agriculture:</Box> <Box>{resources}</Box>
+        <Box sx={{ ...labelStyles }}>Resources and Agriculture:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{resources}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Trade and Economy:</Box> <Box>{trade}</Box>
+        <Box sx={{ ...labelStyles }}>Trade and Economy:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{trade}</Box>
       </Box>
       <Box sx={{ ...commonStyles }}>
-        <Box>Military</Box> <Box>{military}</Box>
+        <Box sx={{ ...labelStyles }}>Military</Box>{" "}
+        <Box sx={{ ...textStyles }}>{military}</Box>
       </Box>
 
       <Box sx={{ ...commonStyles }}>
-        <Box>Culture:</Box> <Box>{cultureDescription}</Box>
+        <Box sx={{ ...labelStyles }}>Culture:</Box>{" "}
+        <Box sx={{ ...textStyles }}>{cultureDescription}</Box>
       </Box>
     </Box>
   );
