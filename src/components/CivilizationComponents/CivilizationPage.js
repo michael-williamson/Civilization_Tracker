@@ -4,35 +4,38 @@ import civilizationsJson from "../../data/civilizations.json";
 import { CivilizationComponent } from "./CivilizationComponent";
 
 const civilizationsMenu = (setCivilization) => {
-  return civilizationsJson.map((item, index) => (
-    <Box key={index}>
-      <Box
-        sx={{
-          bgcolor: "primary.main",
-          px: { xs: 4 },
-          py: { xs: 2 },
-          borderRadius: 2,
-          textAlign: "center",
-          cursor: "pointer",
-        }}
-        onClick={() => setCivilization(item.name)}
-      >
+  return civilizationsJson.map((item, index) => {
+    if (item.name === "") return null;
+    return (
+      <Box key={index}>
         <Box
           sx={{
-            fontSize: { xs: 20 },
-            color: "white",
-            fontWeight: "bold",
-            pb: { md: 1 },
+            bgcolor: "primary.main",
+            px: { xs: 4 },
+            py: { xs: 2 },
+            borderRadius: 2,
+            textAlign: "center",
+            cursor: "pointer",
           }}
+          onClick={() => setCivilization(item.name)}
         >
-          {item.name}
-        </Box>
-        <Box>
-          <img src={item.images[0].thumbnail} alt={item.name} width="100px" />
+          <Box
+            sx={{
+              fontSize: { xs: 20 },
+              color: "white",
+              fontWeight: "bold",
+              pb: { md: 1 },
+            }}
+          >
+            {item.name}
+          </Box>
+          <Box>
+            <img src={item.images[0].thumbnail} alt={item.name} width="100px" />
+          </Box>
         </Box>
       </Box>
-    </Box>
-  ));
+    );
+  });
 };
 
 export const CivilizationPage = () => {
@@ -70,7 +73,15 @@ export const CivilizationPage = () => {
         >
           Choose a Civilization:
         </Box>
-        <Box>{civilizationsMenu(setCivilization)}</Box>
+        <Box
+          sx={{
+            width: { md: "50%" },
+            display: "flex",
+            justifyContent: "space-around",
+          }}
+        >
+          {civilizationsMenu(setCivilization)}
+        </Box>
       </Box>
       {civilization && (
         <CivilizationComponent

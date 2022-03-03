@@ -19,9 +19,9 @@ const findCivilization = (civilization, civilizationsJson) => {
 };
 
 const glossaryTermObjectFN = (tag) => {
-  return glossaryTerms.find(
-    (item) => item.name.toLowerCase() === tag.toLowerCase()
-  );
+  return glossaryTerms.find((item) => {
+    return item.name.toLowerCase() === tag.toLowerCase();
+  });
 };
 
 //used GlossaryTerm component within the popover but needed to override styles to suit the popover
@@ -98,7 +98,9 @@ const addTags = (arr, text, tags, keyIndex) => {
 //returns new item object with react component assembled for affected properties
 const processTags = (item) => {
   for (const prop in item.tags) {
-    item[prop] = addTags([], item[prop], item.tags[prop], 0);
+    if (item.tags[prop].length) {
+      item[prop] = addTags([], item[prop], item.tags[prop], 0);
+    }
   }
   return item;
 };
@@ -146,6 +148,7 @@ export const CivilizationComponent = (props) => {
     name,
     timePeriod,
     locationDescription,
+    locationSummary,
     summary,
     language,
     timeMeasurement,
@@ -164,7 +167,7 @@ export const CivilizationComponent = (props) => {
       </Box>
       <Box sx={{ ...commonStyles }}>
         <Box sx={{ ...labelStyles }}>Location:</Box>
-        <Box sx={{ ...textStyles }}>{locationDescription.summary}</Box>
+        <Box sx={{ ...textStyles }}>{locationSummary}</Box>
         <ImageListComponent
           item={locationDescription}
           onFile={locationDescription.onFile}

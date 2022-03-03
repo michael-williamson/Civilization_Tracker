@@ -133,20 +133,22 @@ export const ImageListComponent = (props) => {
       rowHeight={configObject.imageListDimensions.rowHeight}
       cols={configObject.imageListDimensions.cols}
     >
-      {imageArr.map((item, index) => (
-        <ImageListItem key={index} cols={item.col || 1} rows={item.row || 1}>
-          <img
-            {...srcset(
-              item.display,
-              configObject.imageListDimensions.rowHeight,
-              item.row,
-              item.col
-            )}
-            alt={item.name}
-            loading="lazy"
-          />
-        </ImageListItem>
-      ))}
+      {imageArr.map((item, index) => {
+        return (
+          <ImageListItem key={index} cols={item.col || 1} rows={item.row || 1}>
+            <img
+              {...srcset(
+                item.display,
+                configObject.imageListDimensions.rowHeight,
+                item.row,
+                item.col
+              )}
+              alt={item.name}
+              loading="lazy"
+            />
+          </ImageListItem>
+        );
+      })}
     </ImageList>
   );
 };

@@ -218,13 +218,13 @@
         }
     },
     {
-        "name": "",
-        "image": "",
-        "definition": "",
-        "imageLink": "",
+        "name": "Alluvial Plains",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Skeidar%C3%A1sandur_from_Skaftafell.jpg/256px-Skeidar%C3%A1sandur_from_Skaftafell.jpg",
+        "definition": "Plains formed by deposited sediment from one or more rivers over a period of time.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Skeidar%C3%A1sandur_from_Skaftafell.jpg",
         "imageAttribution": {
-            "author": "",
-            "domain": "CC BY-SA 4.0",
+            "author": "Laurent Deschodt",
+            "domain": "CC BY-SA 3.0",
             "via": "Wikimedia Commons"
         }
     }

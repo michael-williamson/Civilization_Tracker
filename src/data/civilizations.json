@@ -20,9 +20,9 @@
                         "via": "Wikimedia Commons"
                     }
                 }
-            ],
-            "summary": "Located in a distinct plain in between Tigris and Euphrates rivers"
+            ]
         },
+        "locationSummary": "Located in a distinct plain in between Tigris and Euphrates rivers",
         "images": [
             {
                 "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Sumerian_portrait_statuette_of_a_woman_02.jpg",
@@ -129,6 +129,239 @@
             "language": [
                 "cuneiform"
             ]
+        }
+    },
+    {
+        "name": "Indus Valley Civilization",
+        "numbericDate": 5300,
+        "timePeriod": "3300 til 1300 BC",
+        "gpsCoordinates": {
+            "lat": 27.808021856473008,
+            "long": 68.42545260990171
+        },
+        "locationDescription": {
+            "onFile": "indusValleyMap",
+            "images": [
+                {
+                    "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Indus_Valley_Civilization,_Mature_Phase_(2600-1900_BCE).png",
+                    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png/256px-Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png",
+                    "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png/512px-Indus_Valley_Civilization%2C_Mature_Phase_%282600-1900_BCE%29.png",
+                    "attribution": {
+                        "author": "Avantiputra7",
+                        "domain": "CC BY-SA 3.0",
+                        "via": "Wikimedia Commons"
+                    }
+                }
+            ]
+        },
+        "locationSummary": "Centralized around the Indus River system,  the Indus Valley contains alluvial plains that are rich and fertile.",
+        "images": [
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG/256px-Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG/512px-Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG",
+                "attribution": {
+                    "author": "Ismoon",
+                    "domain": "CC0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Indus_Valley_Master_of_Animals.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Indus_Valley_Master_of_Animals.jpg/256px-Indus_Valley_Master_of_Animals.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Indus_Valley_Master_of_Animals.jpg/512px-Indus_Valley_Master_of_Animals.jpg",
+                "attribution": {
+                    "author": "Gary Todd",
+                    "domain": "CC0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Male_figurine_1._Mature_Harappan_period._Indus_civilization.jpg",
+                "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Male_figurine_1._Mature_Harappan_period._Indus_civilization.jpg/256px-Male_figurine_1._Mature_Harappan_period._Indus_civilization.jpg",
+                "display": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fd/Male_figurine_1._Mature_Harappan_period._Indus_civilization.jpg/512px-Male_figurine_1._Mature_Harappan_period._Indus_civilization.jpg",
+                "attribution": {
+                    "author": "Ismoon",
+                    "domain": "CC0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
+        "summary": "",
+        "language": "",
+        "timeMeasurement": "",
+        "cultureDescription": "",
+        "religion": "",
+        "cosmology": "",
+        "resources": "",
+        "trade": "",
+        "military": "",
+        "cities": [
+            {
+                "name": "Sumer",
+                "gpsCoordinates": {
+                    "lat": 36.7,
+                    "long": 114.2
+                },
+                "images": [
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    },
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    },
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    }
+                ],
+                "linkToInfo": "",
+                "description": ""
+            }
+        ],
+        "tags": {
+            "locationSummary": [
+                "alluvial plains"
+            ],
+            "resources": [],
+            "military": [],
+            "language": []
+        }
+    },
+    {
+        "name": "",
+        "numbericDate": 5300,
+        "timePeriod": "3300 til 1300 BC",
+        "gpsCoordinates": {
+            "lat": 32,
+            "long": 46
+        },
+        "locationDescription": {
+            "onFile": "sumerMap",
+            "images": [
+                {
+                    "wikimediaAddress": "",
+                    "thumbnail": "",
+                    "display": "",
+                    "attribution": {
+                        "author": "",
+                        "domain": "CC BY-SA 4.0",
+                        "via": "Wikimedia Commons"
+                    }
+                }
+            ]
+        },
+        "locationSummary": "",
+        "images": [
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            },
+            {
+                "wikimediaAddress": "",
+                "thumbnail": "",
+                "display": "",
+                "attribution": {
+                    "author": "",
+                    "domain": "CC BY-SA 4.0",
+                    "via": "Wikimedia Commons"
+                }
+            }
+        ],
+        "linkToInfo": "",
+        "summary": "",
+        "language": "",
+        "timeMeasurement": "",
+        "cultureDescription": "",
+        "religion": "",
+        "cosmology": "",
+        "resources": "",
+        "trade": "",
+        "military": "",
+        "cities": [
+            {
+                "name": "Sumer",
+                "gpsCoordinates": {
+                    "lat": 36.7,
+                    "long": 114.2
+                },
+                "images": [
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    },
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    },
+                    {
+                        "wikimediaAddress": "",
+                        "thumbnail": "",
+                        "display": "",
+                        "attribution": {
+                            "author": "",
+                            "domain": "CC BY-SA 4.0",
+                            "via": "Wikimedia Commons"
+                        }
+                    }
+                ],
+                "linkToInfo": "",
+                "description": ""
+            }
+        ],
+        "tags": {
+            "resources": [],
+            "military": [],
+            "language": []
         }
     }
 ]
