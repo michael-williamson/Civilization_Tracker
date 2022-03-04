@@ -22,3 +22,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+src/media/componentIcons/expand_gray.png
+src/media/componentIcons/expand_blue.png
+src/media/componentIcons/expand_arrow_down.png
