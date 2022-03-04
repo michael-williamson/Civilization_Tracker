@@ -29,8 +29,9 @@ const commonStyles = {
   alignItems: "center",
   justifyContent: "space-around",
   py: { xs: 1, md: 2 },
-  width: { xs: "93%", md: "fit-content" },
+  width: { xs: "93%", md: "90%" },
   borderRadius: 2,
+  cursor: "pointer",
 };
 
 const labelStyles = {
@@ -38,7 +39,7 @@ const labelStyles = {
   borderRadius: 1,
   px: { xs: 1 },
   py: { xs: 1 },
-  fontSize: { xs: 20 },
+  fontSize: { xs: 20, md: 32 },
   fontWeight: "bold",
   borderBottom: "4px solid #1976d2",
   borderTop: "1px solid black",
@@ -47,7 +48,7 @@ const labelStyles = {
   "::after": {
     content: `url(${expandArrow})`,
     position: "absolute",
-    right: "10%",
+    right: { xs: "10%", md: "2%" },
   },
 };
 
@@ -97,11 +98,8 @@ const collapsableListItems = (json, size) => {
         <CollapseComponent
           mainStyles={commonStyles}
           labelStyles={labelStyles}
-          textStyles={textStyles}
           label={propertyObject[item]}
-          text={null}
-          key={item}
-          imageComponent={
+          component={
             <ImageListComponent
               item={json}
               size={size}
@@ -109,6 +107,8 @@ const collapsableListItems = (json, size) => {
               cols={4}
             />
           }
+          defaultExpanded={false}
+          key={item}
         />
       );
     }
@@ -116,10 +116,9 @@ const collapsableListItems = (json, size) => {
       <CollapseComponent
         mainStyles={commonStyles}
         labelStyles={labelStyles}
-        textStyles={textStyles}
         label={propertyObject[item]}
-        text={json[item]}
-        imageComponent={null}
+        component={<Box sx={{ ...textStyles }}>{json[item]}</Box>}
+        defaultExpanded={false}
         key={item}
       />
     );
@@ -128,9 +127,10 @@ const collapsableListItems = (json, size) => {
 
 export const CivilizationComponent = (props) => {
   const { civilization, civilizationsJson } = props;
+
   const matchesMD = useMediaQuery("(min-width:600px)");
   const matchesLG = useMediaQuery("(min-width:1020px)");
-
+  if (!civilization) return <Box sx={{ height: "100vh" }}>Placeholder</Box>;
   let size = !matchesMD && !matchesLG ? "sm" : matchesMD ? "md" : "lg";
 
   let item = findCivilization(civilization, civilizationsJson);

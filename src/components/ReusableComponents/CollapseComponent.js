@@ -2,10 +2,22 @@ import React, { useState } from "react";
 import { Box } from "@mui/system";
 import { Collapse } from "@mui/material";
 
+const checkedFN = (checked, secondaryChecked = undefined) => {
+  if (secondaryChecked !== undefined) return !secondaryChecked && true;
+  return checked;
+};
 export const CollapseComponent = (props) => {
-  const { mainStyles, labelStyles, textStyles, label, text, imageComponent } =
-    props;
-  const [checked, setChecked] = useState(false);
+  const {
+    mainStyles,
+    labelStyles,
+    label,
+    component,
+    easing,
+    timeout,
+    defaultExpanded,
+    secondaryChecked,
+  } = props;
+  const [checked, setChecked] = useState(defaultExpanded);
   const handleChange = () => {
     setChecked((prev) => !prev);
   };
@@ -13,10 +25,13 @@ export const CollapseComponent = (props) => {
     <Box sx={{ ...mainStyles }}>
       <Box sx={{ ...labelStyles }} onClick={handleChange}>
         {label}
-      </Box>{" "}
-      <Collapse in={checked}>
-        {text && <Box sx={{ ...textStyles }}>{text}</Box>}
-        {imageComponent && imageComponent}
+      </Box>
+      <Collapse
+        in={checkedFN(checked, secondaryChecked)}
+        easing={easing}
+        timeout={timeout}
+      >
+        {component}
       </Collapse>
     </Box>
   );
