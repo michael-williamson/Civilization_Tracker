@@ -7,10 +7,15 @@ import headerThumb from "./bgImages/headerThumb.jpg";
 import sunriseAgriculture from "./bgImages/sunrise_agriculture.jpg";
 import sumerMap from "./civilizationMap/sumerMap.png";
 import indusValleyMap from "./civilizationMap/indus_valley_map.png";
+import expandArrow from "./componentIcons/expand_arrow_40.png";
 
 const onFile = {
-  sumerMap: { display: sumerMap, alt: "Sumer" },
-  indusValleyMap: { display: indusValleyMap, alt: "Indus Valley" },
+  sumerMap: { display: sumerMap, thumbnail: sumerMap, alt: "Sumer" },
+  indusValleyMap: {
+    display: indusValleyMap,
+    thumbnail: indusValleyMap,
+    alt: "Indus Valley",
+  },
 };
 
 export {
@@ -21,5 +26,6 @@ export {
   potteryIcon,
   hayIcon,
   pyramidIcon,
+  expandArrow,
   onFile,
 };

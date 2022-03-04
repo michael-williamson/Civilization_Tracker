@@ -10,7 +10,6 @@ const civilizationsMenu = (setCivilization) => {
       <Box key={index}>
         <Box
           sx={{
-            bgcolor: "primary.main",
             px: { xs: 4 },
             py: { xs: 2 },
             borderRadius: 2,
@@ -22,15 +21,20 @@ const civilizationsMenu = (setCivilization) => {
           <Box
             sx={{
               fontSize: { xs: 20 },
-              color: "white",
+              color: "primary.main",
               fontWeight: "bold",
-              pb: { md: 1 },
+              pb: { md: 2 },
             }}
           >
             {item.name}
           </Box>
           <Box>
-            <img src={item.images[0].thumbnail} alt={item.name} width="100px" />
+            <img
+              src={item.images[0].thumbnail}
+              alt={item.name}
+              width="100px"
+              style={{ borderRadius: 21 }}
+            />
           </Box>
         </Box>
       </Box>
@@ -69,6 +73,7 @@ export const CivilizationPage = () => {
             width: { xs: "100%" },
             textAlign: "center",
             py: { xs: 4 },
+            fontWeight: "bold",
           }}
         >
           Choose a Civilization:

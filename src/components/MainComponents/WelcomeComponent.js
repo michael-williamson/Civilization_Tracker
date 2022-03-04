@@ -75,6 +75,7 @@ export const WelcomeComponent = () => {
         <Box
           sx={{
             fontSize: { xs: 20 },
+            fontFamily: "cursive",
             textAlign: "center",
             color: "primary.main",
             borderTop: "7px double rgb(0 0 0 / 41%)",
@@ -119,6 +120,7 @@ export const WelcomeComponent = () => {
         <Box
           sx={{
             fontSize: { xs: 20 },
+            fontFamily: "cursive",
             textAlign: "center",
             color: "primary.main",
             borderTop: "7px double rgb(0 0 0 / 41%)",

@@ -21,14 +21,15 @@ const configuration = (size, config, cols) => {
   //configuration for tiled image layout
   let configObject;
   const height = "initial";
-  const rowHeight = 100;
+  const smRowHeight = 256 / 4;
+  const mdRowHeight = 512 / 4;
   const { sm, md, lg } = config;
   switch (size) {
     case "sm":
       configObject = {
         imageListDimensions: {
           height: height,
-          rowHeight: rowHeight,
+          rowHeight: smRowHeight,
           cols: cols,
         },
         imageTiling: {
@@ -40,7 +41,7 @@ const configuration = (size, config, cols) => {
       configObject = {
         imageListDimensions: {
           height: height,
-          rowHeight: rowHeight,
+          rowHeight: mdRowHeight,
           cols: cols,
         },
         imageTiling: {
@@ -52,7 +53,7 @@ const configuration = (size, config, cols) => {
       configObject = {
         imageListDimensions: {
           height: height,
-          rowHeight: rowHeight,
+          rowHeight: mdRowHeight,
           cols: cols,
         },
         imageTiling: {
@@ -64,7 +65,7 @@ const configuration = (size, config, cols) => {
       configObject = {
         imageListDimensions: {
           height: height,
-          rowHeight: rowHeight,
+          rowHeight: mdRowHeight,
           cols: cols,
         },
         imageTiling: {
@@ -82,6 +83,7 @@ const imageArrFN = (item, onFile = null, onFileObject = null, configObject) => {
   onFile &&
     imagesArr.unshift({
       display: onFileObject[`${onFile}`].display,
+      thumbnail: onFileObject[`${onFile}`].thumbnail,
       name: onFileObject[`${onFile}`].alt,
     });
 
@@ -122,13 +124,6 @@ export const ImageListComponent = (props) => {
   const imageArr = imageArrFN(item, onFile, onFileObject, configObject);
   return (
     <ImageList
-      sx={{
-        height: {
-          xs: configObject.imageListDimensions.height,
-          md: configObject.imageListDimensions.height,
-        },
-        width: { lg: "100%" },
-      }}
       variant="quilted"
       rowHeight={configObject.imageListDimensions.rowHeight}
       cols={configObject.imageListDimensions.cols}
@@ -138,7 +133,7 @@ export const ImageListComponent = (props) => {
           <ImageListItem key={index} cols={item.col || 1} rows={item.row || 1}>
             <img
               {...srcset(
-                item.display,
+                `${size === "sm" ? item.thumbnail : item.display}`,
                 configObject.imageListDimensions.rowHeight,
                 item.row,
                 item.col
