@@ -14,8 +14,8 @@ export const Header = (props) => {
     <Box
       sx={{
         backgroundImage: `url(${headerThumb})`,
-        borderTop: "10px solid #212121",
-        borderBottom: "10px solid #212121",
+        borderTop: "3px solid #212121",
+        borderBottom: "3px solid #212121",
         position: "relative",
         isolation: "isolate",
         "::after": {

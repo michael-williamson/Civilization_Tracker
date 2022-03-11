@@ -15,3 +15,6 @@ export const theme = createTheme({
     },
   },
 });
+
+//primary.main for copy paste
+// 1976d2

@@ -11,6 +11,7 @@ export const CollapseComponent = (props) => {
     mainStyles,
     labelStyles,
     label,
+    alternativeLabel,
     component,
     easing,
     timeout,
@@ -21,10 +22,14 @@ export const CollapseComponent = (props) => {
   const handleChange = () => {
     setChecked((prev) => !prev);
   };
+
+  //adds dynamic labeling if desired
+  const alternativeLabelHandler = checked ? alternativeLabel : label;
+
   return (
     <Box sx={{ ...mainStyles }}>
-      <Box sx={{ ...labelStyles }} onClick={handleChange}>
-        {label}
+      <Box sx={{ ...labelStyles, cursor: "pointer" }} onClick={handleChange}>
+        {alternativeLabel ? alternativeLabelHandler : label}
       </Box>
       <Collapse
         in={checkedFN(checked, secondaryChecked)}

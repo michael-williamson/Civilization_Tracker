@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
 import { Routes, Route } from "react-router";
-import GoogleMap from "./components/MapComponents/GoogleMap";
 import { MainPage } from "./components/MainComponents/MainPage";
 import { GlossaryMain } from "./components/GlossaryComponents/GlossaryMain";
 import { ChartPage } from "./components/ChartComponents/ChartPage";
 import { routes } from "../src/routes/index";
 import { WelcomeComponent } from "./components/MainComponents/WelcomeComponent";
 import { CivilizationPage } from "./components/CivilizationComponents/CivilizationPage";
+import { MainMapComponent } from "./components/MapComponents/MainMapComponent";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
       <MainPage />
       <Routes>
         <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
-        <Route exact path={routes.Map} element={<GoogleMap />} />
+        <Route exact path={routes.Map} element={<MainMapComponent />} />
         <Route
           exact
           path={routes.Civilizations}
