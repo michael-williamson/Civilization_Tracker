@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box } from "@mui/system";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -28,7 +28,21 @@ const glossaryTermsList = () => {
   });
 };
 
+const listSingleTerm = (currentTerm) => {
+  const item = glossaryTerms.find((item) => item.name === currentTerm);
+  return (
+    <GlossaryTerm
+      name={item.name}
+      image={item.image}
+      definition={item.definition}
+      key={item.name}
+    />
+  );
+};
+
 export const GlossaryMain = () => {
+  const [currentTerm, setCurrentTerm] = useState("Alluvium");
+  const [listForm, setListForm] = useState(false);
   return (
     <Box>
       <Box
@@ -54,9 +68,60 @@ export const GlossaryMain = () => {
           </Box>
         </AccordionSummary>
         <AccordionDetails sx={{ border: 0 }}>
-          <GlossaryTermList />
+          <GlossaryTermList setCurrentTerm={setCurrentTerm} />
         </AccordionDetails>
       </Accordion>
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          flexDirection: "column",
+          mt: { lg: 3 },
+        }}
+      >
+        <Box
+          sx={{
+            fontSize: { lg: 30 },
+            textAlign: "center",
+            color: "primary.main",
+            py: { lg: 2 },
+          }}
+        >
+          Display Options:
+        </Box>
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box
+            sx={{
+              py: { lg: 1 },
+              px: { lg: 2 },
+              bgcolor: "primary.main",
+              color: "secondary.main",
+              fontWeight: "bold",
+              borderRadius: 2,
+              mx: { lg: 2 },
+              cursor: "pointer",
+            }}
+            onClick={() => setListForm(false)}
+          >
+            Single Term
+          </Box>
+          <Box
+            sx={{
+              py: { lg: 1 },
+              px: { lg: 2 },
+              bgcolor: "primary.main",
+              color: "secondary.main",
+              fontWeight: "bold",
+              borderRadius: 2,
+              mx: { lg: 2 },
+              cursor: "pointer",
+            }}
+            onClick={() => setListForm(true)}
+          >
+            List All Terms
+          </Box>
+        </Box>
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -67,7 +132,7 @@ export const GlossaryMain = () => {
           pb: { xs: 4 },
         }}
       >
-        {glossaryTermsList()}
+        {listForm ? glossaryTermsList() : listSingleTerm(currentTerm)}
       </Box>
     </Box>
   );

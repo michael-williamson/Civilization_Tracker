@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
+import { CardMedia } from "@mui/material";
 
 export const GlossaryTerm = (props) => {
   const { name, image, definition } = props;
@@ -36,7 +37,15 @@ export const GlossaryTerm = (props) => {
             {name}
           </Box>
           <Box sx={{ textAlign: "center" }}>
-            <img src={image} alt={name} />
+            <CardMedia
+              component="img"
+              src={image}
+              sx={{
+                width: { xs: 60, md: 140 },
+                height: { xs: 90, md: 140 },
+                borderRadius: 3,
+              }}
+            />
           </Box>
         </Box>
         <Box

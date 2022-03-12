@@ -2,7 +2,7 @@ import React from "react";
 import { Box } from "@mui/system";
 import glossaryTerms from "../../data/glossaryTerms.json";
 
-const termList = () => {
+const termList = (setCurrentTerm) => {
   const sortedArray = glossaryTerms.sort(function (a, b) {
     let textA = a.name.toUpperCase();
     let textB = b.name.toUpperCase();
@@ -12,13 +12,28 @@ const termList = () => {
   return sortedArray.map((item) => {
     if (item.name === "") return null;
     return (
-      <Box key={item.name} sx={{ color: "primary.main" }}>
-        <a href={`#${item.name}`}>{item.name}</a>
+      <Box
+        key={item.name}
+        sx={{ color: "primary.main" }}
+        onClick={() => setCurrentTerm(item.name)}
+      >
+        {item.name}
       </Box>
     );
   });
 };
 
-export const GlossaryTermList = () => {
-  return <Box sx={{ display: "grid", rowGap: 2 }}>{termList()}</Box>;
+export const GlossaryTermList = (props) => {
+  const { setCurrentTerm } = props;
+  return (
+    <Box
+      sx={{
+        display: "grid",
+        rowGap: 2,
+        gridTemplateColumns: "auto auto auto auto",
+      }}
+    >
+      {termList(setCurrentTerm)}
+    </Box>
+  );
 };
