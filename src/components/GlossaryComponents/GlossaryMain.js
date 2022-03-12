@@ -84,7 +84,7 @@ export const GlossaryMain = () => {
             fontSize: { lg: 30 },
             textAlign: "center",
             color: "primary.main",
-            py: { lg: 2 },
+            py: { xs: 2 },
           }}
         >
           Display Options:
@@ -92,13 +92,13 @@ export const GlossaryMain = () => {
         <Box sx={{ display: "flex", justifyContent: "center" }}>
           <Box
             sx={{
-              py: { lg: 1 },
-              px: { lg: 2 },
+              py: { xs: 1, lg: 1 },
+              px: { xs: 1, lg: 2 },
               bgcolor: "primary.main",
               color: "secondary.main",
               fontWeight: "bold",
               borderRadius: 2,
-              mx: { lg: 2 },
+              mx: { xs: 2, lg: 2 },
               cursor: "pointer",
             }}
             onClick={() => setListForm(false)}
@@ -107,13 +107,13 @@ export const GlossaryMain = () => {
           </Box>
           <Box
             sx={{
-              py: { lg: 1 },
-              px: { lg: 2 },
+              py: { xs: 1, lg: 1 },
+              px: { xs: 1, lg: 2 },
               bgcolor: "primary.main",
               color: "secondary.main",
               fontWeight: "bold",
               borderRadius: 2,
-              mx: { lg: 2 },
+              mx: { xs: 2, lg: 2 },
               cursor: "pointer",
             }}
             onClick={() => setListForm(true)}
