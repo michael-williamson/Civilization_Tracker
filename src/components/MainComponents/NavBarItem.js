@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
 
 export const NavBarItem = (props) => {
-  const { icon, text } = props;
+  const { icon, text, lastItem } = props;
   const theme = useTheme();
   return (
     <NavLink
@@ -17,13 +17,15 @@ export const NavBarItem = (props) => {
     >
       <Box
         sx={{
-          backgroundColor: "transparent",
+          backgroundColor: (theme) =>
+            theme.palette.customColors.transparentBlue,
           color: "white",
           px: { md: 4 },
           py: { md: 1 },
           fontWeight: "bold",
           display: "flex",
           alignItems: "center",
+          borderRight: lastItem ? "none" : "1px solid white",
         }}
       >
         <Box sx={{ fontSize: { xs: 20 }, fontWeight: 600 }}>{text}</Box>

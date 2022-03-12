@@ -32,14 +32,20 @@ export const Header = (props) => {
         sx={{
           color: "primary.light",
           fontWeight: "bold",
-          pt: { xs: 6 },
-          pb: { md: 2 },
+          py: { xs: 3 },
+          px: { lg: 2 },
+          my: { md: 3 },
+          mx: { lg: "auto" },
+          width: "min-content",
+          whiteSpace: "nowrap",
           fontSize: { xs: 40 },
           fontStyle: "italic",
           textAlign: "center",
+          border: "10px groove #ffffff66 ",
+          fontFamily: "monospace",
         }}
       >
-        Civilization Tracker
+        Origins of Civilization
       </Box>
 
       {matches ? (

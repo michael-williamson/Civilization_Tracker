@@ -16,8 +16,15 @@ const iconObject = {
 };
 
 const navItemsList = () => {
-  return routesArray.map((item) => {
-    return <NavBarItem icon={iconObject[`${item}`]} text={item} key={item} />;
+  return routesArray.map((item, index) => {
+    return (
+      <NavBarItem
+        icon={iconObject[`${item}`]}
+        text={item}
+        key={item}
+        lastItem={index === routesArray.length - 1 && true}
+      />
+    );
   });
 };
 
