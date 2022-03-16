@@ -48,9 +48,15 @@ const textEffectEngine = (
 };
 
 export const SequentialTextEffect = (props) => {
-  const { text, baseTimeInterval, startTime, whiteSpaceWidth } = props;
+  const {
+    text,
+    baseTimeInterval,
+    startTime,
+    whiteSpaceWidth,
+    justifyContent = "center",
+  } = props;
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex", justifyContent: justifyContent }}>
       {textEffectEngine(text, baseTimeInterval, startTime, whiteSpaceWidth)}
     </Box>
   );

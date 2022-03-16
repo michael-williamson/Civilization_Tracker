@@ -10,3 +10,12 @@ a {
 .App {
   background-color: #f5f5f5;
 }
+
+/* these selectors override exsisting behavior of InfoWindow on Google Maps Api */
+.gm-style .gm-style-iw-c {
+  padding: 0 !important;
+}
+
+.gm-style .gm-style-iw-d {
+  overflow: hidden !important;
+}

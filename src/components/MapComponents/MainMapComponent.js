@@ -36,7 +36,7 @@ export const MainMapComponent = () => {
         <Box
           sx={{
             fontFamily: "cursive",
-            fontSize: { lg: 15 },
+            fontSize: { xs: 17, lg: 15 },
             color: "secondary.main",
           }}
         >
