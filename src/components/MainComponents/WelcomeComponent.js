@@ -15,6 +15,17 @@ export const WelcomeComponent = () => {
     >
       <Box
         sx={{
+          fontSize: { xs: 40 },
+          color: "primary.main",
+          fontWeight: "bold",
+          textAlign: "center",
+          py: { xs: 2 },
+        }}
+      >
+        Welcome to Origins of Civilization
+      </Box>
+      <Box
+        sx={{
           fontSize: { xs: 30 },
           fontStyle: "italic",
           textAlign: "center",

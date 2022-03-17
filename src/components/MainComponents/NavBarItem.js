@@ -18,8 +18,7 @@ export const NavBarItem = (props) => {
     >
       <Box
         sx={{
-          backgroundColor: (theme) =>
-            theme.palette.customColors.transparentBlue,
+          backgroundColor: (theme) => theme.palette.customColors.navBar,
           color: "white",
           px: { md: 4 },
           py: { md: 1 },

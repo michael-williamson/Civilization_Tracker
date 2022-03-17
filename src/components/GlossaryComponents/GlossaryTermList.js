@@ -14,7 +14,7 @@ const termList = (setCurrentTerm) => {
     return (
       <Box
         key={item.name}
-        sx={{ color: "primary.main" }}
+        sx={{ color: "primary.main", cursor: "pointer" }}
         onClick={() => setCurrentTerm(item.name)}
       >
         {item.name}
