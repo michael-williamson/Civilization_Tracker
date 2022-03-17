@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
 import { MainPage } from "./components/MainComponents/MainPage";
 import { GlossaryMain } from "./components/GlossaryComponents/GlossaryMain";
@@ -12,19 +13,19 @@ import { MainMapComponent } from "./components/MapComponents/MainMapComponent";
 function App() {
   return (
     <div className="App">
-      <MainPage />
-      <Routes>
-        <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
-        <Route exact path={routes.Map} element={<MainMapComponent />} />
-        <Route
-          exact
-          path={routes.Civilizations}
-          element={<CivilizationPage />}
-        />
-
-        <Route exact path={routes.Charts} element={<ChartPage />} />
-        <Route exact path={routes.Glossary} element={<GlossaryMain />} />
-      </Routes>
+      <BrowserRouter>
+        <MainPage />
+        <Routes>
+          <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
+          <Route exact path={routes.Map} element={<MainMapComponent />} />
+          <Route
+            path={`${routes.Civilizations}/*`}
+            element={<CivilizationPage />}
+          />
+          <Route exact path={routes.Charts} element={<ChartPage />} />
+          <Route exact path={routes.Glossary} element={<GlossaryMain />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

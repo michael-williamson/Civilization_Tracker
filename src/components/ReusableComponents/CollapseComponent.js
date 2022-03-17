@@ -16,7 +16,7 @@ export const CollapseComponent = (props) => {
     easing,
     timeout,
     defaultExpanded,
-    secondaryChecked,
+    secondaryChecked = undefined,
   } = props;
   const [checked, setChecked] = useState(defaultExpanded);
   const handleChange = () => {

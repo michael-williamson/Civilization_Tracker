@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { CollapseComponent } from "../ReusableComponents/CollapseComponent";
 import { Box } from "@mui/system";
 import { CardMedia } from "@mui/material";
 import { Button } from "@mui/material";
-import { KeyboardArrowDown } from "@mui/icons-material";
+import { KeyboardArrowDown, KeyboardArrowUp } from "@mui/icons-material";
 
 const mainStylesExpanded = {
   display: "grid",
@@ -49,12 +50,12 @@ const labelStylesCollapsed = {
   py: { xs: 1 },
 };
 
-const civilizationsMenu = (setCivilization, civilizationsJson) => {
+const civilizationsMenu = (civilizationsJson) => {
   return civilizationsJson.map((item, index) => {
     if (item.name === "") return null;
     return (
       <Box key={index}>
-        <Box
+        <Link
           sx={{
             px: { xs: 0 },
             py: { xs: 2 },
@@ -65,7 +66,7 @@ const civilizationsMenu = (setCivilization, civilizationsJson) => {
             flexDirection: "column",
             alignItems: "center",
           }}
-          onClick={() => setCivilization(item.name)}
+          to={`/Civilizations/${item.name}`}
         >
           <Box
             sx={{
@@ -73,12 +74,13 @@ const civilizationsMenu = (setCivilization, civilizationsJson) => {
               color: "primary.main",
               fontWeight: "bold",
               pb: { xs: 2 },
+              textAlign: "center",
             }}
           >
             {item.name}
           </Box>
 
-          <Box>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <CardMedia
               src={item.images[0].thumbnail}
               sx={{
@@ -89,30 +91,38 @@ const civilizationsMenu = (setCivilization, civilizationsJson) => {
               component="img"
             />
           </Box>
-        </Box>
+        </Link>
       </Box>
     );
   });
 };
 
 export const CivilizationMenu = (props) => {
-  const { civilizationsJson, setCivilization, civilization, timeout } = props;
+  const [secondaryChecked, setSecondaryChecked] = useState(null);
+  const { civilizationsJson, civilization, timeout } = props;
   const labelStyles = civilization ? labelStylesCollapsed : labelStylesExpanded;
   const mainStyles = civilization ? mainStylesCollapsed : mainStylesExpanded;
-  const handleClick = () => {
-    setCivilization(null);
+  const handleClick = (bool) => (e) => {
+    setSecondaryChecked(bool);
   };
-  const label = civilization ? (
+  const label = secondaryChecked ? (
+    <Button
+      variant="contained"
+      sx={{ fontWeight: "bold" }}
+      endIcon={<KeyboardArrowUp />}
+      onClick={handleClick(false)}
+    >
+      Hide Menu
+    </Button>
+  ) : (
     <Button
       variant="contained"
       sx={{ fontWeight: "bold" }}
       endIcon={<KeyboardArrowDown />}
-      onClick={handleClick}
+      onClick={handleClick(true)}
     >
       Show Menu
     </Button>
-  ) : (
-    "Choose a Civilization:"
   );
 
   return (
@@ -129,11 +139,11 @@ export const CivilizationMenu = (props) => {
             justifyContent: "space-evenly",
           }}
         >
-          {civilizationsMenu(setCivilization, civilizationsJson)}
+          {civilizationsMenu(civilizationsJson)}
         </Box>
       }
-      defaultExpanded={true}
-      secondaryChecked={civilization}
+      defaultExpanded={!civilization}
+      secondaryChecked={civilization && !secondaryChecked}
     />
   );
 };

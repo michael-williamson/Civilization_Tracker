@@ -12,7 +12,7 @@ export const theme = createTheme({
     customColors: {
       lightBlue: "#7af3ff",
       bgBlue: "#56b0ff",
-      transparentBlue: "#0079ffa6",
+      transparentBlue: "#0079ff1c",
     },
   },
 });

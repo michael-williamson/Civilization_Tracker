@@ -6,21 +6,11 @@ import { expandArrow, onFile } from "../../media";
 import { processTags } from "./termTagsFunctions";
 import { CollapseComponent } from "../ReusableComponents/CollapseComponent";
 import { imageGridConfig2, imageGridConfig1 } from "./imageGridObjects";
+import { findCivilization } from "./helperFunctions";
 
 //!! created a file termTagFunctions.js in CivilizationComponents folder because of crowding in this module
 // this functionality identifies tagged words in text to create a pop up definition from glossary json
 // also imageGridObject.js contains grid config objects for ImageListComponents
-
-//returns a single object from json related to civilization property passed down
-const findCivilization = (civilization, civilizationsJson) => {
-  return civilizationsJson.find((item) => {
-    if (item.name === civilization) {
-      return item;
-    } else {
-      return null;
-    }
-  });
-};
 
 const commonStyles = {
   display: "flex",
@@ -78,9 +68,9 @@ const propertyObject = {
   cultureDescription: "Culture",
 };
 
-const collapsableListItems = (json, size) => {
+const collapsableListItems = (json, size, name) => {
   const propArray = Object.keys(propertyObject);
-  return propArray.map((item) => {
+  const listComponents = propArray.map((item) => {
     if (item === "locationDescription") {
       return (
         <ImageListComponent
@@ -123,6 +113,15 @@ const collapsableListItems = (json, size) => {
       />
     );
   });
+
+  return (
+    <Box sx={{ display: "grid", rowGap: { md: 0 }, justifyItems: "center" }}>
+      <Box sx={{ ...commonStyles }}>
+        <Box sx={{ ...textStyles, fontSize: { xs: 60, md: 74 } }}>{name}</Box>
+      </Box>
+      {listComponents}
+    </Box>
+  );
 };
 
 export const CivilizationComponent = (props) => {
@@ -137,11 +136,13 @@ export const CivilizationComponent = (props) => {
   item = processTags(item);
   const { name } = item;
   return (
-    <Box sx={{ display: "grid", rowGap: { md: 0 }, justifyItems: "center" }}>
-      <Box sx={{ ...commonStyles }}>
-        <Box sx={{ ...textStyles, fontSize: { xs: 60, md: 74 } }}>{name}</Box>
-      </Box>
-      {collapsableListItems(item, size)}
-    </Box>
+    <CollapseComponent
+      mainStyles={{}}
+      label={null}
+      easing={{ enter: "liner", exit: "liner" }}
+      timeout={1000}
+      defaultExpanded={true}
+      component={collapsableListItems(item, size, name)}
+    />
   );
 };

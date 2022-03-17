@@ -78,7 +78,7 @@ export const CivilizationsInfoWindow = (props) => {
               pb: { xs: 12 },
             }}
           >
-            <Link to={`${routes.Civilizations}/${item.name}`}>
+            <Link to={`/${routes.Civilizations}/${item.name}`}>
               click here for more info
             </Link>
           </Box>

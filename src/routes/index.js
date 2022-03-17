@@ -6,4 +6,4 @@ export const routes = {
   Glossary: "Glossary",
 };
 
-export const routesArray = ["Map", "Civilizations", "Charts", "Glossary"];
+export const routesArray = Object.keys(routes);

@@ -4,18 +4,14 @@ import { Box } from "@mui/system";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { useTheme } from "@mui/material/styles";
 import { routesArray } from "../../routes";
-import { Map, List as ListIcon, BarChart } from "@mui/icons-material";
-
-const iconObject = {
-  Map: <Map sx={{ fontSize: 40 }} />,
-  Glossary: <ListIcon sx={{ fontSize: 40 }} />,
-  Charts: <BarChart sx={{ fontSize: 40 }} />,
-};
 
 export const NavDrawer = (props) => {
   const { toggleDrawer } = props;
   const { navWindow } = props;
+  const { iconObjectFN } = props;
   const theme = useTheme();
+
+  const iconObject = iconObjectFN({});
 
   const list = () => (
     <Box

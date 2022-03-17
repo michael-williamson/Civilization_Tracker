@@ -2,6 +2,23 @@ import React, { useState } from "react";
 import { Box } from "@mui/system";
 import { Header } from "./Header";
 import { NavDrawer } from "./NavDrawer";
+import {
+  Map,
+  List as ListIcon,
+  BarChart,
+  Fort,
+  Home,
+} from "@mui/icons-material";
+
+const iconObjectFN = (iconObjectStyles) => {
+  return {
+    Welcome: <Home sx={iconObjectStyles} />,
+    Map: <Map sx={iconObjectStyles} />,
+    Civilizations: <Fort sx={iconObjectStyles} />,
+    Glossary: <ListIcon sx={iconObjectStyles} />,
+    Charts: <BarChart sx={iconObjectStyles} />,
+  };
+};
 
 export const MainPage = () => {
   const [navWindow, setNavWindow] = useState(false);
@@ -19,8 +36,12 @@ export const MainPage = () => {
   };
   return (
     <Box>
-      <Header toggleDrawer={toggleDrawer} />
-      <NavDrawer toggleDrawer={toggleDrawer} navWindow={navWindow} />
+      <Header toggleDrawer={toggleDrawer} iconObjectFN={iconObjectFN} />
+      <NavDrawer
+        toggleDrawer={toggleDrawer}
+        navWindow={navWindow}
+        iconObjectFN={iconObjectFN}
+      />
     </Box>
   );
 };

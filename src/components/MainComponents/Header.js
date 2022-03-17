@@ -7,7 +7,7 @@ import { IconButton } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 
 export const Header = (props) => {
-  const { toggleDrawer } = props;
+  const { toggleDrawer, iconObjectFN } = props;
   const matches = useMediaQuery("(min-width:900px)");
 
   return (
@@ -18,6 +18,8 @@ export const Header = (props) => {
         borderBottom: "3px solid #212121",
         position: "relative",
         isolation: "isolate",
+        pt: { xs: 2, md: 2 },
+        pb: { xs: 2, md: 0 },
         "::after": {
           content: "''",
           inset: 0,
@@ -33,7 +35,7 @@ export const Header = (props) => {
           color: "primary.light",
           fontWeight: "bold",
           py: { xs: 3 },
-          px: { lg: 2 },
+          px: { xs: 1, lg: 2 },
           my: { md: 3 },
           mx: { xs: "auto" },
           width: "min-content",
@@ -49,9 +51,9 @@ export const Header = (props) => {
       </Box>
 
       {matches ? (
-        <NavBar />
+        <NavBar iconObjectFN={iconObjectFN} />
       ) : (
-        <Box sx={{ textAlign: "center", pb: { xs: 4 }, pt: { xs: 2 } }}>
+        <Box sx={{ textAlign: "center", pt: { xs: 2 } }}>
           <IconButton
             onClick={toggleDrawer(true)}
             color="secondary"
@@ -59,6 +61,7 @@ export const Header = (props) => {
             sx={{
               border: "4px solid white",
               background: "rgb(255 255 255 / 51%)",
+              borderRadius: { xs: 3 },
             }}
           >
             <Menu size="large" />
