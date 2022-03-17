@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/system";
-import { CardMedia } from "@mui/material";
-import Drawer from "@mui/material/Drawer";
-import Button from "@mui/material/Button";
-import { ArrowForwardIos } from "@mui/icons-material";
+import { CardMedia, Drawer, Button } from "@mui/material";
 
 export const CivilizationDrawer = (props) => {
   const { civilizationsJson } = props;
@@ -37,7 +34,7 @@ export const CivilizationDrawer = (props) => {
         sx={{
           color: "primary.main",
           fontSize: { md: 40 },
-          fontWeight: { md: "bold", pt: { md: 8 }, textAlign: "center" },
+          fontWeight: { md: "bold", textAlign: "center" },
         }}
       >
         Choose a Civilization:
@@ -89,13 +86,12 @@ export const CivilizationDrawer = (props) => {
   );
 
   return (
-    <Box sx={{ position: "absolute", left: 0 }}>
+    <Box>
       <React.Fragment>
         <Button
           onClick={toggleDrawer("left", true)}
           variant="outlined"
           sx={{ fontWeight: "bold", mt: { md: 2 } }}
-          endIcon={<ArrowForwardIos />}
         >
           Open Civilization Menu
         </Button>

@@ -24,14 +24,13 @@ export const CivilizationPage = () => {
     <Box
       sx={{
         display: "grid",
-        rowGap: 4,
+
         justifyItems: "center",
         width: { xs: "100%", md: "70%" },
         mx: { md: "auto" },
         pb: { md: 8 },
       }}
     >
-      <CivilizationDrawer civilizationsJson={civilizationsJson} />
       <Box
         sx={{
           fontSize: { xs: 40 },
@@ -43,6 +42,7 @@ export const CivilizationPage = () => {
       >
         Explore Civilizations
       </Box>
+      <CivilizationDrawer civilizationsJson={civilizationsJson} />
       <Routes>
         <Route
           path=":id"
