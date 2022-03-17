@@ -19,7 +19,7 @@ function App() {
           <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
           <Route exact path={routes.Map} element={<MainMapComponent />} />
           <Route
-            path={`${routes.Civilizations}/*`}
+            path={`${routes.Civilizations}`}
             element={<CivilizationPage />}
           />
           <Route exact path={routes.Charts} element={<ChartPage />} />

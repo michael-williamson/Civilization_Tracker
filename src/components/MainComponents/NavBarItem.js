@@ -2,6 +2,7 @@ import React from "react";
 import { Box } from "@mui/system";
 import { NavLink } from "react-router-dom";
 import { useTheme } from "@mui/material/styles";
+import { routes } from "../../routes/index";
 
 export const NavBarItem = (props) => {
   const { icon, text, lastItem } = props;
@@ -9,7 +10,7 @@ export const NavBarItem = (props) => {
   return (
     <NavLink
       key={text}
-      to={`/${text}`}
+      to={`/${routes[text]}`}
       className={(isActive) => "nav-link" + (!isActive ? " unselected" : "")}
       style={(isActive) => ({
         color: isActive ? theme.palette.primary.main : "purple",

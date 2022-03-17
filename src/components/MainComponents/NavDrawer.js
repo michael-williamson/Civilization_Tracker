@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import { Box } from "@mui/system";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { useTheme } from "@mui/material/styles";
-import { routesArray } from "../../routes";
+import { routesArray, routes } from "../../routes";
 
 export const NavDrawer = (props) => {
   const { toggleDrawer } = props;
@@ -36,7 +36,7 @@ export const NavDrawer = (props) => {
       {routesArray.map((text) => (
         <NavLink
           key={text}
-          to={`/${text}`}
+          to={`/${routes[text]}`}
           className={(isActive) =>
             "nav-link" + (!isActive ? " unselected" : "")
           }

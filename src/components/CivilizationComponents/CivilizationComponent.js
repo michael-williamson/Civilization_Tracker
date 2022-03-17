@@ -53,8 +53,7 @@ const textStyles = {
 // this object is used to insure a particular order of how json properties will be evaluated with accompanying UI labels
 const propertyObject = {
   locationSummary: "Location",
-  locationDescription: "Gallery",
-
+  locationDescription: "Map",
   timePeriod: "Time Period",
   images: "Gallery",
   summary: "Summary",
@@ -73,13 +72,22 @@ const collapsableListItems = (json, size, name) => {
   const listComponents = propArray.map((item) => {
     if (item === "locationDescription") {
       return (
-        <ImageListComponent
-          item={json[item]}
-          onFile={json[item].onFile}
-          onFileObject={onFile}
-          size={size}
-          config={imageGridConfig1}
-          cols={4}
+        <CollapseComponent
+          mainStyles={commonStyles}
+          labelStyles={labelStyles}
+          label={propertyObject[item]}
+          component={
+            <ImageListComponent
+              item={json[item]}
+              onFile={json[item].onFile}
+              onFileObject={onFile}
+              size={size}
+              config={imageGridConfig1}
+              cols={4}
+              key={item}
+            />
+          }
+          defaultExpanded={false}
           key={item}
         />
       );
@@ -117,7 +125,7 @@ const collapsableListItems = (json, size, name) => {
   return (
     <Box sx={{ display: "grid", rowGap: { md: 0 }, justifyItems: "center" }}>
       <Box sx={{ ...commonStyles }}>
-        <Box sx={{ ...textStyles, fontSize: { xs: 60, md: 74 } }}>{name}</Box>
+        <Box sx={{ ...textStyles, fontSize: { xs: 26, md: 44 } }}>{name}</Box>
       </Box>
       {listComponents}
     </Box>
