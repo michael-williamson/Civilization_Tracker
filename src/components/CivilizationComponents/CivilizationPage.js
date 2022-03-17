@@ -4,8 +4,8 @@ import { Routes, Route } from "react-router";
 import { Box } from "@mui/system";
 import civilizationsJson from "../../data/civilizations.json";
 import { CivilizationComponent } from "./CivilizationComponent";
-import { CivilizationMenu } from "./CivilizationMenu";
 import { findCivilization } from "./helperFunctions";
+import { CivilizationDrawer } from "./CivilizationDrawer";
 
 export const CivilizationPage = () => {
   const [civilization, setCivilization] = useState(null);
@@ -31,20 +31,18 @@ export const CivilizationPage = () => {
         pb: { md: 8 },
       }}
     >
-      <Routes>
-        <Route
-          path=":id"
-          element={
-            <CivilizationMenu
-              civilizationsJson={civilizationsJson}
-              setCivilization={setCivilization}
-              civilization={civilization}
-              timeout={2000}
-              easing={{ enter: "liner", exit: "liner" }}
-            />
-          }
-        />
-      </Routes>
+      <CivilizationDrawer civilizationsJson={civilizationsJson} />
+      <Box
+        sx={{
+          fontSize: { xs: 40 },
+          color: "primary.main",
+          fontWeight: "bold",
+          textAlign: "center",
+          py: { xs: 2 },
+        }}
+      >
+        Explore Civilizations
+      </Box>
       <Routes>
         <Route
           path=":id"
