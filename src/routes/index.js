@@ -1,5 +1,5 @@
 export const routes = {
-  Welcome: "/",
+  Welcome: "",
   Map: "Map",
   Civilizations: "Civilizations/*",
   Charts: "Charts",

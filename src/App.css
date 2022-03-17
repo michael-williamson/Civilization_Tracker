@@ -9,6 +9,7 @@ a {
 
 .App {
   background-color: #f5f5f5;
+  padding-bottom: 50px;
 }
 
 /* these selectors override exsisting behavior of InfoWindow on Google Maps Api */
