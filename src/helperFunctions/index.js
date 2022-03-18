@@ -1,3 +1,5 @@
+import { theme } from "../Theme";
+
 export const imageScreenSizeObject = (
   screenSize,
   firstImage,
@@ -15,9 +17,12 @@ export const imageScreenSizeObject = (
   };
 };
 
+console.log(theme, "outside object");
+
 //component header styles object,  control from here for general changes
 export const componentHeaderStyles = {
   fontSize: { xs: 40 },
+
   color: "primary.main",
   fontWeight: "bold",
   textAlign: "center",
@@ -25,5 +30,6 @@ export const componentHeaderStyles = {
   px: { md: 3 },
   mb: { xs: 2 },
   borderRadius: { xs: 1 },
-  border: (theme) => `1px solid ${theme.palette.primary.main}`,
+  border: `1px solid ${theme.palette.primary.main}`,
+  fontFamily: theme.fonts.marker,
 };

@@ -1,5 +1,13 @@
 import { createTheme } from "@mui/material/styles";
 
+const googleFonts = {
+  amatic: "Amatic SC",
+  comfortaa: "Comfortaa",
+  gloria: "Gloria Hallelujah",
+  mosaic: "Palette Mosaic",
+  marker: "Permanent Marker",
+};
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -16,7 +24,16 @@ export const theme = createTheme({
       civilizationDrawerBG: "#0c0c0c",
     },
   },
+  fonts: {
+    ...googleFonts,
+  },
 });
 
 //primary.main for copy paste
 // 1976d2
+
+// font-family: 'Amatic SC', cursive;
+// font-family: 'Comfortaa', cursive;
+// font-family: 'Gloria Hallelujah', cursive;
+// font-family: 'Palette Mosaic', cursive;
+// font-family: 'Permanent Marker', cursive;

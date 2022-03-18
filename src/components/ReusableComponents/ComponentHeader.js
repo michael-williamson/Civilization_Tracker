@@ -5,6 +5,7 @@ export const ComponentHeader = (props) => {
   const {
     text = "Example",
     fontSize,
+    fontFamily,
     color,
     fontWeight,
     textAlign,
@@ -18,6 +19,7 @@ export const ComponentHeader = (props) => {
     <Box
       sx={{
         fontSize,
+        fontFamily,
         color,
         fontWeight,
         textAlign,
