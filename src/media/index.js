@@ -8,6 +8,7 @@ import sunriseAgriculture from "./bgImages/sunrise_agriculture.jpg";
 import sumerMap from "./civilizationMap/sumerMap.png";
 import indusValleyMap from "./civilizationMap/indus_valley_map.png";
 import expandArrow from "./componentIcons/expand_arrow_40.png";
+import barleyIcon from "./map icons/barley.png";
 
 const onFile = {
   sumerMap: { display: sumerMap, thumbnail: sumerMap, alt: "Sumer" },
@@ -26,6 +27,7 @@ export {
   potteryIcon,
   hayIcon,
   pyramidIcon,
+  barleyIcon,
   expandArrow,
   onFile,
 };

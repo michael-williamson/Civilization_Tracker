@@ -22,6 +22,7 @@ export const theme = createTheme({
       bgBlue: "#56b0ff",
       navBar: "#9f71321c",
       civilizationDrawerBG: "#0c0c0c",
+      titleBG: "rgb(20 20 20 / 16%)",
     },
   },
   fonts: {
