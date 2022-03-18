@@ -25,7 +25,15 @@ export const CivilizationDrawer = (props) => {
 
   const civilizationsMenu = (anchor, civilizationsJson) => (
     <Box
-      sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 250 }}
+      sx={{
+        width: anchor === "top" || anchor === "bottom" ? "auto" : "initial",
+        display: "grid",
+        rowGap: 3,
+        py: { lg: 5 },
+        background: (theme) => theme.palette.customColors.civilizationDrawerBG,
+        height: "100vh",
+        gridTemplateRows: "repeat(4,1fr)",
+      }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
@@ -39,49 +47,52 @@ export const CivilizationDrawer = (props) => {
       >
         Choose a Civilization:
       </Box>
-      {civilizationsJson.map((item, index) => {
-        if (item.name === "") return null;
-        return (
-          <Link
-            sx={{
-              px: { xs: 0 },
-              py: { xs: 2 },
-              borderRadius: 2,
-              textAlign: "center",
-              cursor: "pointer",
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-            }}
-            to={`/Civilizations/${item.name}`}
-            key={index}
-          >
-            <Box
-              sx={{
-                fontSize: { xs: 20 },
-                color: "primary.main",
-                fontWeight: "bold",
-                pb: { xs: 2 },
-                textAlign: "center",
+      <Box
+        sx={{
+          height: "100%",
+          px: { lg: 5 },
+        }}
+      >
+        {civilizationsJson.map((item, index) => {
+          if (item.name === "") return null;
+          return (
+            <Link
+              style={{
+                display: "block",
+                borderTop: "1px solid white",
+                borderBottom: "1px solid white",
+                padding: "24px 0",
+                cursor: "pointer",
               }}
+              to={`/Civilizations/${item.name}`}
+              key={index}
             >
-              {item.name}
-            </Box>
-
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
-              <CardMedia
-                src={item.images[0].thumbnail}
+              <Box
                 sx={{
-                  width: { xs: 60, md: 140 },
-                  height: { xs: 90, md: 140 },
-                  borderRadius: 3,
+                  fontSize: { xs: 20 },
+                  color: "primary.main",
+                  fontWeight: "bold",
+                  pb: { xs: 2 },
+                  textAlign: "center",
                 }}
-                component="img"
-              />
-            </Box>
-          </Link>
-        );
-      })}
+              >
+                {item.name}
+              </Box>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <CardMedia
+                  src={item.images[0].thumbnail}
+                  sx={{
+                    width: { xs: 60, md: 140 },
+                    height: { xs: 90, md: 140 },
+                    borderRadius: 3,
+                  }}
+                  component="img"
+                />
+              </Box>
+            </Link>
+          );
+        })}
+      </Box>
     </Box>
   );
 
@@ -99,6 +110,7 @@ export const CivilizationDrawer = (props) => {
           anchor={"left"}
           open={state["left"]}
           onClose={toggleDrawer("left", false)}
+          sx={{ "& .MuiPaper-root.MuiDrawer-paper": { width: { lg: "20%" } } }}
         >
           {civilizationsMenu("left", civilizationsJson)}
         </Drawer>

@@ -2,6 +2,8 @@ import React from "react";
 import { Box } from "@mui/system";
 import { IconComponent } from "./IconComponent";
 import { pyramidIcon, potteryIcon, hayIcon } from "../../media/index";
+import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
+import { componentHeaderStyles } from "../../helperFunctions/index";
 
 export const WelcomeComponent = () => {
   return (
@@ -10,20 +12,12 @@ export const WelcomeComponent = () => {
         display: "grid",
         justifyItems: "center",
         rowGap: 3,
-        mt: { xs: 3 },
       }}
     >
-      <Box
-        sx={{
-          fontSize: { xs: 40 },
-          color: "primary.main",
-          fontWeight: "bold",
-          textAlign: "center",
-          py: { xs: 2 },
-        }}
-      >
-        Welcome to Origins of Civilization
-      </Box>
+      <ComponentHeader
+        text="Welcome to Origins of Civilization"
+        {...componentHeaderStyles}
+      />
       <Box
         sx={{
           fontSize: { xs: 30 },
@@ -41,9 +35,9 @@ export const WelcomeComponent = () => {
           display: "grid",
           justifyItems: "center",
           rowGap: { xs: 5 },
-          border: "5px solid #1976d2",
-          py: { xs: 1 },
-          px: { xs: 2 },
+          border: (theme) => `1px solid ${theme.palette.primary.main}`,
+          py: { xs: 3 },
+          px: { xs: 3 },
           borderRadius: 2,
           width: "80%",
         }}

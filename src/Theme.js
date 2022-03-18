@@ -13,6 +13,7 @@ export const theme = createTheme({
       lightBlue: "#7af3ff",
       bgBlue: "#56b0ff",
       navBar: "#9f71321c",
+      civilizationDrawerBG: "#0c0c0c",
     },
   },
 });

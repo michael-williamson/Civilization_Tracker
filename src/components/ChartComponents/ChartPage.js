@@ -1,22 +1,23 @@
 import React from "react";
 import { Box } from "@mui/system";
 import { EventsTimeline } from "./EventsTimeline";
+import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
+import { componentHeaderStyles } from "../../helperFunctions";
 
 export const ChartPage = () => {
   return (
-    <div>
-      <Box
-        sx={{
-          fontSize: { xs: 40 },
-          color: "primary.main",
-          fontWeight: "bold",
-          textAlign: "center",
-          py: { xs: 2 },
-        }}
-      >
-        Charts
-      </Box>
+    <Box
+      sx={{
+        display: "grid",
+
+        justifyItems: "center",
+        width: { xs: "100%", md: "70%" },
+        mx: { md: "auto" },
+        pb: { md: 8 },
+      }}
+    >
+      <ComponentHeader text="Charts" {...componentHeaderStyles} />
       <EventsTimeline />
-    </div>
+    </Box>
   );
 };

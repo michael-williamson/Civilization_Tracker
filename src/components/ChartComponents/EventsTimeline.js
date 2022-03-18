@@ -1,5 +1,5 @@
 import React from "react";
-// import { Box } from "@mui/system";
+import { Box } from "@mui/system";
 import { Line } from "react-chartjs-2";
 import {
   Chart as ChartJS,
@@ -130,8 +130,8 @@ const data = {
 
 export const EventsTimeline = () => {
   return (
-    <div>
+    <Box sx={{ width: { md: "100%" } }}>
       <Line height={400} width={400} data={data} options={options} />
-    </div>
+    </Box>
   );
 };

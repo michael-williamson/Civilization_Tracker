@@ -1,4 +1,5 @@
 import React from "react";
+import { Box } from "@mui/system";
 import "./App.css";
 import { BrowserRouter } from "react-router-dom";
 import { Routes, Route } from "react-router";
@@ -15,16 +16,18 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <MainPage />
-        <Routes>
-          <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
-          <Route exact path={routes.Map} element={<MainMapComponent />} />
-          <Route
-            path={`${routes.Civilizations}`}
-            element={<CivilizationPage />}
-          />
-          <Route exact path={routes.Charts} element={<ChartPage />} />
-          <Route exact path={routes.Glossary} element={<GlossaryMain />} />
-        </Routes>
+        <Box sx={{ py: { xs: 3 }, px: { xs: 1 } }}>
+          <Routes>
+            <Route exact path={routes.Welcome} element={<WelcomeComponent />} />
+            <Route exact path={routes.Map} element={<MainMapComponent />} />
+            <Route
+              path={`${routes.Civilizations}`}
+              element={<CivilizationPage />}
+            />
+            <Route exact path={routes.Charts} element={<ChartPage />} />
+            <Route exact path={routes.Glossary} element={<GlossaryMain />} />
+          </Routes>
+        </Box>
       </BrowserRouter>
     </div>
   );

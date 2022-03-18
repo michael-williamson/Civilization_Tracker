@@ -7,6 +7,8 @@ import glossaryTerms from "../../data/glossaryTerms.json";
 import { GlossaryTerm } from "./GlossaryTerm";
 import { GlossaryTermList } from "./GlossaryTermList";
 import { ExpandMore } from "@mui/icons-material";
+import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
+import { componentHeaderStyles } from "../../helperFunctions/index";
 
 const glossaryTermsList = () => {
   const sortedArray = glossaryTerms.sort(function (a, b) {
@@ -44,19 +46,18 @@ export const GlossaryMain = () => {
   const [currentTerm, setCurrentTerm] = useState("Alluvium");
   const [listForm, setListForm] = useState(false);
   return (
-    <Box>
-      <Box
-        sx={{
-          fontSize: { xs: 40 },
-          color: "primary.main",
-          fontWeight: "bold",
-          textAlign: "center",
-          py: { xs: 2 },
-        }}
-      >
-        Glossary
-      </Box>
-      <Accordion sx={{ boxShadow: "none" }}>
+    <Box
+      sx={{
+        display: "grid",
+
+        justifyItems: "center",
+        width: { xs: "100%" },
+        mx: { md: "auto" },
+        pb: { md: 8 },
+      }}
+    >
+      <ComponentHeader text="Glossary" {...componentHeaderStyles} />
+      <Accordion sx={{ boxShadow: "none", width: { lg: "50%" } }}>
         <AccordionSummary
           expandIcon={<ExpandMore color="primary" />}
           aria-controls="panel1a-content"

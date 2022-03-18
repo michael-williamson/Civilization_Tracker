@@ -15,7 +15,7 @@ export const NavDrawer = (props) => {
 
   const list = () => (
     <Box
-      sx={{ width: 250, backgroundColor: "#e7e7e7", height: "100vh" }}
+      sx={{ backgroundColor: "#e7e7e7", height: "100vh" }}
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
@@ -69,6 +69,12 @@ export const NavDrawer = (props) => {
         open={navWindow}
         onClose={toggleDrawer(false)}
         onOpen={toggleDrawer(true)}
+        //had to target classnames inside to expand width
+        sx={{
+          "& .MuiPaper-root.MuiDrawer-paper": {
+            width: { xs: "75%" },
+          },
+        }}
       >
         {list()}
       </SwipeableDrawer>

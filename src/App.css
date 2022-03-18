@@ -21,3 +21,17 @@ a {
 .gm-style .gm-style-iw-d {
   overflow: hidden !important;
 }
+
+/* general styling for webkit scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1976d2;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}

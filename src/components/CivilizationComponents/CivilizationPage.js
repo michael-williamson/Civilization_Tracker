@@ -6,6 +6,8 @@ import civilizationsJson from "../../data/civilizations.json";
 import { CivilizationComponent } from "./CivilizationComponent";
 import { findCivilization } from "./helperFunctions";
 import { CivilizationDrawer } from "./CivilizationDrawer";
+import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
+import { componentHeaderStyles } from "../../helperFunctions";
 
 export const CivilizationPage = () => {
   const [civilization, setCivilization] = useState(null);
@@ -31,17 +33,10 @@ export const CivilizationPage = () => {
         pb: { md: 8 },
       }}
     >
-      <Box
-        sx={{
-          fontSize: { xs: 40 },
-          color: "primary.main",
-          fontWeight: "bold",
-          textAlign: "center",
-          py: { xs: 2 },
-        }}
-      >
-        Explore Civilizations
-      </Box>
+      <ComponentHeader
+        text="Explore Civilizations"
+        {...componentHeaderStyles}
+      />
       <CivilizationDrawer civilizationsJson={civilizationsJson} />
       <Routes>
         <Route
@@ -54,26 +49,6 @@ export const CivilizationPage = () => {
           }
         />
       </Routes>
-      {/* <CivilizationMenu
-            civilizationsJson={civilizationsJson}
-            setCivilization={setCivilization}
-            civilization={civilization}
-            timeout={2000}
-            easing={{ enter: "liner", exit: "liner" }}
-          /> */}
-      {/* <CollapseComponent
-            mainStyles={{}}
-            label={null}
-            easing={{ enter: "liner", exit: "liner" }}
-            timeout={1000}
-            defaultExpanded={true}
-            component={
-              <CivilizationComponent
-                civilization={civilization || "Sumer"}
-                civilizationsJson={civilizationsJson}
-              />
-            }
-          /> */}
     </Box>
   );
 };

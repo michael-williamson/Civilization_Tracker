@@ -2,6 +2,8 @@ import React from "react";
 import { Box } from "@mui/system";
 import GoogleMap from "./GoogleMap";
 import { SequentialTextEffect } from "../ReusableComponents/SequentialTextEffect";
+import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
+import { componentHeaderStyles } from "../../helperFunctions";
 
 export const MainMapComponent = () => {
   return (
@@ -14,6 +16,7 @@ export const MainMapComponent = () => {
         height: "100vh",
       }}
     >
+      <ComponentHeader text="Interactive Map" {...componentHeaderStyles} />
       <Box
         sx={{
           fontSize: { xs: 30, lg: 44 },
