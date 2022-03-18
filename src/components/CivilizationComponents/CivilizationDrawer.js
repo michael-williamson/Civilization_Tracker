@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Box } from "@mui/system";
 import { CardMedia, Drawer, Button } from "@mui/material";
+import { Mouse } from "@mui/icons-material";
 
 export const CivilizationDrawer = (props) => {
   const { civilizationsJson } = props;
@@ -102,15 +103,26 @@ export const CivilizationDrawer = (props) => {
         <Button
           onClick={toggleDrawer("left", true)}
           variant="outlined"
-          sx={{ fontWeight: "bold", mt: { md: 2 } }}
+          sx={{
+            fontWeight: "bold",
+            mt: { md: 2 },
+            fontFamily: (theme) => theme.fonts.marker,
+          }}
+          endIcon={<Mouse />}
+          size="large"
         >
-          Open Civilization Menu
+          Open Civilizations Menu
         </Button>
         <Drawer
           anchor={"left"}
           open={state["left"]}
           onClose={toggleDrawer("left", false)}
-          sx={{ "& .MuiPaper-root.MuiDrawer-paper": { width: { lg: "20%" } } }}
+          sx={{
+            "& .MuiPaper-root.MuiDrawer-paper": {
+              width: { lg: "20%" },
+              backgroundColor: "transparent",
+            },
+          }}
         >
           {civilizationsMenu("left", civilizationsJson)}
         </Drawer>

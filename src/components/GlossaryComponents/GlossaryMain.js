@@ -6,6 +6,7 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import glossaryTerms from "../../data/glossaryTerms.json";
 import { GlossaryTerm } from "./GlossaryTerm";
 import { GlossaryTermList } from "./GlossaryTermList";
+import { glossaryIcon } from "../../media";
 import { ExpandMore } from "@mui/icons-material";
 import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
 import { componentHeaderStyles } from "../../helperFunctions/index";
@@ -56,7 +57,14 @@ export const GlossaryMain = () => {
         pb: { md: 8 },
       }}
     >
-      <ComponentHeader text="Glossary" {...componentHeaderStyles} />
+      <ComponentHeader
+        text="Glossary"
+        additionalTextStyles={{ px: { xs: 0, md: 3 } }}
+        icon={true}
+        iconProps={{ src: glossaryIcon, iconWidthSM: 80, iconWidthLG: 70 }}
+        {...componentHeaderStyles}
+        {...{ display: "flex", alignItems: "center" }}
+      />
       <Accordion sx={{ boxShadow: "none", width: { lg: "50%" } }}>
         <AccordionSummary
           expandIcon={<ExpandMore color="primary" />}

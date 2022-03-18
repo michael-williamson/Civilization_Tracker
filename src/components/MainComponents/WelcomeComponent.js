@@ -26,6 +26,7 @@ export const WelcomeComponent = () => {
           color: "primary.main",
           py: { xs: 1 },
           px: { md: 2 },
+          fontFamily: (theme) => theme.fonts.gloria,
         }}
       >
         "A Discovery of our societal Beginnings"

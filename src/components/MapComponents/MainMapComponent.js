@@ -4,6 +4,7 @@ import GoogleMap from "./GoogleMap";
 import { SequentialTextEffect } from "../ReusableComponents/SequentialTextEffect";
 import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
 import { componentHeaderStyles } from "../../helperFunctions";
+import { mapTitleIcon } from "../../media";
 
 export const MainMapComponent = () => {
   return (
@@ -16,7 +17,14 @@ export const MainMapComponent = () => {
         height: "100vh",
       }}
     >
-      <ComponentHeader text="Interactive Map" {...componentHeaderStyles} />
+      <ComponentHeader
+        text="Interactive Map"
+        additionalTextStyles={{ px: { xs: 0, md: 3 } }}
+        icon={true}
+        iconProps={{ src: mapTitleIcon, iconWidthSM: 80, iconWidthLG: 70 }}
+        {...componentHeaderStyles}
+        {...{ display: "flex", alignItems: "center" }}
+      />
       <Box
         sx={{
           fontSize: { xs: 30, lg: 44 },

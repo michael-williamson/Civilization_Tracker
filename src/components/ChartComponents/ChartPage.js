@@ -3,6 +3,7 @@ import { Box } from "@mui/system";
 import { EventsTimeline } from "./EventsTimeline";
 import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
 import { componentHeaderStyles } from "../../helperFunctions";
+import { chartsIcon } from "../../media";
 
 export const ChartPage = () => {
   return (
@@ -16,7 +17,14 @@ export const ChartPage = () => {
         pb: { md: 8 },
       }}
     >
-      <ComponentHeader text="Charts" {...componentHeaderStyles} />
+      <ComponentHeader
+        text="Charts"
+        additionalTextStyles={{ px: { xs: 0, md: 3 } }}
+        icon={true}
+        iconProps={{ src: chartsIcon, iconWidthSM: 80, iconWidthLG: 70 }}
+        {...componentHeaderStyles}
+        {...{ display: "flex", alignItems: "center" }}
+      />
       <EventsTimeline />
     </Box>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import { ImageListComponent } from "../ReusableComponents/ImageListComponent";
 import { Box } from "@mui/system";
+import { CardMedia } from "@mui/material";
 import { useMediaQuery } from "@mui/material";
 import { expandArrow, onFile } from "../../media";
 import { processTags } from "./termTagsFunctions";
@@ -26,6 +27,8 @@ const commonStyles = {
 
 const labelStyles = {
   color: "primary.main",
+  backgroundColor: (theme) => theme.palette.customColors.componentHeaderBG,
+  fontFamily: (theme) => theme.fonts.marker,
   borderRadius: 1,
   px: { xs: 1 },
   py: { xs: 1 },
@@ -122,10 +125,35 @@ const collapsableListItems = (json, size, name) => {
     );
   });
 
+  const cardMediaSrc = onFile[json.locationDescription.onFile].thumbnail;
+
   return (
-    <Box sx={{ display: "grid", rowGap: { md: 0 }, justifyItems: "center" }}>
+    <Box
+      sx={{
+        display: "grid",
+        justifyItems: "center",
+      }}
+    >
       <Box sx={{ ...commonStyles }}>
-        <Box sx={{ ...textStyles, fontSize: { xs: 26, md: 44 } }}>{name}</Box>
+        <Box
+          sx={{
+            ...textStyles,
+            fontSize: { xs: 56, md: 71 },
+            fontFamily: (theme) => theme.fonts.amatic,
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <Box sx={{ pr: { xs: 2, lg: 5 } }}>{name}</Box>
+          <CardMedia
+            component="img"
+            src={cardMediaSrc}
+            sx={{
+              height: { xs: 100, md: 180 },
+              borderRadius: 2,
+            }}
+          />
+        </Box>
       </Box>
       {listComponents}
     </Box>

@@ -8,6 +8,7 @@ import { findCivilization } from "./helperFunctions";
 import { CivilizationDrawer } from "./CivilizationDrawer";
 import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
 import { componentHeaderStyles } from "../../helperFunctions";
+import { searchIcon } from "../../media";
 
 export const CivilizationPage = () => {
   const [civilization, setCivilization] = useState(null);
@@ -26,7 +27,7 @@ export const CivilizationPage = () => {
     <Box
       sx={{
         display: "grid",
-
+        rowGap: { xs: 5 },
         justifyItems: "center",
         width: { xs: "100%", md: "70%" },
         mx: { md: "auto" },
@@ -35,7 +36,11 @@ export const CivilizationPage = () => {
     >
       <ComponentHeader
         text="Explore Civilizations"
+        additionalTextStyles={{ px: { xs: 0, md: 3 } }}
+        icon={true}
+        iconProps={{ src: searchIcon, iconWidthSM: 80, iconWidthLG: 70 }}
         {...componentHeaderStyles}
+        {...{ display: "flex", alignItems: "center" }}
       />
       <CivilizationDrawer civilizationsJson={civilizationsJson} />
       <Routes>
