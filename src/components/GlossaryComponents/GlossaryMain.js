@@ -72,7 +72,13 @@ export const GlossaryMain = () => {
           id="panel1a-header"
           sx={{ borderBottom: "4px solid #1976d238", pd: { md: 2 } }}
         >
-          <Box sx={{ color: "primary.main", fontWeight: "bold" }}>
+          <Box
+            sx={{
+              color: "primary.main",
+              fontWeight: "bold",
+              fontFamily: (theme) => theme.fonts.marker,
+            }}
+          >
             List of Terms
           </Box>
         </AccordionSummary>
@@ -94,6 +100,7 @@ export const GlossaryMain = () => {
             textAlign: "center",
             color: "primary.main",
             py: { xs: 2 },
+            fontFamily: (theme) => theme.fonts.marker,
           }}
         >
           Display Options:
@@ -109,6 +116,7 @@ export const GlossaryMain = () => {
               borderRadius: 2,
               mx: { xs: 2, lg: 2 },
               cursor: "pointer",
+              fontFamily: (theme) => theme.fonts.marker,
             }}
             onClick={() => setListForm(false)}
           >
@@ -124,6 +132,7 @@ export const GlossaryMain = () => {
               borderRadius: 2,
               mx: { xs: 2, lg: 2 },
               cursor: "pointer",
+              fontFamily: (theme) => theme.fonts.marker,
             }}
             onClick={() => setListForm(true)}
           >

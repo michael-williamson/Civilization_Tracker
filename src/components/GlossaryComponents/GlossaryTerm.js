@@ -31,6 +31,7 @@ export const GlossaryTerm = (props) => {
               textAlign: "center",
               pr: { xs: 3 },
               backgroundColor: "#f4f4f4",
+              fontFamily: (theme) => theme.fonts.comfortaa,
             }}
             id={name}
           >
@@ -55,6 +56,7 @@ export const GlossaryTerm = (props) => {
             textAlign: "center",
             py: { xs: 3 },
             px: { xs: 2 },
+            fontFamily: (theme) => theme.fonts.comfortaa,
           }}
         >
           {definition}
