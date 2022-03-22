@@ -1,5 +1,6 @@
 import React from "react";
 import { Box } from "@mui/system";
+import { theme } from "../../Theme";
 import { EventsTimeline } from "./EventsTimeline";
 import { ComponentHeader } from "../ReusableComponents/ComponentHeader";
 import { componentHeaderStyles } from "../../helperFunctions";
@@ -25,7 +26,8 @@ export const ChartPage = () => {
         {...componentHeaderStyles}
         {...{ display: "flex", alignItems: "center" }}
       />
-      <EventsTimeline />
+
+      <EventsTimeline theme={theme} />
     </Box>
   );
 };
