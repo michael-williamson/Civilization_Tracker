@@ -9,6 +9,7 @@ import {
   LinearScale,
   Title,
 } from "chart.js";
+import civilizationDevelopments from "../../data/civilizationDevelopments.json";
 
 ChartJS.register(CategoryScale, LineElement, PointElement, LinearScale, Title);
 
@@ -110,18 +111,17 @@ const options = (theme) => {
   };
 };
 
-const labels = ["January", "February", "March", "April", "May", "June"];
+const labels = () => {
+  return civilizationDevelopments.map((item) => item.name);
+};
+
+const datesData = () => {
+  return civilizationDevelopments.map((item) => item.dateBP);
+};
 
 const data = {
-  labels: labels,
-  datasets: [
-    {
-      label: "My First dataset",
-      backgroundColor: "rgb(255, 99, 132)",
-      borderColor: "rgb(255, 99, 132)",
-      data: [0, 10, 5, 2, 20, 30, 45],
-    },
-  ],
+  labels: labels(),
+  datasets: datesData(),
 };
 
 export const EventsTimeline = (props) => {

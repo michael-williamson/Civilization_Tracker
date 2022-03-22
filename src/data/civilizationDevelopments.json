@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Younger Dryas",
+        "dateBP": 12900,
+        "dateTitle": "12.9 to 11.7 tya",
+        "summary": "",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Younger_Dryas_temperature_variation.png",
+        "imageAttribution": {
+            "author": "Hannes Grobe",
+            "domain": "CC BY-SA 3.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Farming",
+        "dateBP": 11500,
+        "dateTitle": "11.5 tya",
+        "summary": "",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Neolithic_Stone_Sickle_on_Modern_Handle.jpg",
+        "imageAttribution": {
+            "author": "Gary Todd",
+            "domain": "CC0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Wheel",
+        "dateBP": 6000,
+        "dateTitle": "6 tya",
+        "summary": "",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Shang_Chariot_Burial_18.jpg",
+        "imageAttribution": {
+            "author": "Gary Todd",
+            "domain": "CC0",
+            "via": "Wikimedia Commons"
+        }
+    }
+]
