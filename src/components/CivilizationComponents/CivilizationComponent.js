@@ -149,7 +149,7 @@ const collapsableListItems = (json, size, name) => {
             component="img"
             src={cardMediaSrc}
             sx={{
-              height: { xs: 100, md: 180 },
+              height: { xs: 60, sm: 120, md: 180 },
               borderRadius: 2,
             }}
           />

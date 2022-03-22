@@ -42,8 +42,8 @@ export const GlossaryTerm = (props) => {
               component="img"
               src={image}
               sx={{
-                width: { xs: 60, md: 140 },
-                height: { xs: 90, md: 140 },
+                width: { md: 140 },
+                height: { md: 140 },
                 borderRadius: 3,
               }}
             />
