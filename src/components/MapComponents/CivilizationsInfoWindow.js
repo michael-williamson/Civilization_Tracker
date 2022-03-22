@@ -1,13 +1,28 @@
 import React from "react";
 import { Box } from "@mui/system";
+import { IconButton } from "@mui/material";
+import { Close } from "@mui/icons-material";
 import { routes } from "../../routes";
 import { Link } from "react-router-dom";
 
 export const CivilizationsInfoWindow = (props) => {
-  const { item } = props;
+  const { item, handleClick } = props;
+
   const itemBGImage = item.images[0].display || null;
   return (
-    <Box>
+    <Box sx={{ position: "relative" }}>
+      <IconButton
+        sx={{
+          position: "absolute",
+          right: 0,
+          top: 0,
+          zIndex: 1000,
+          color: "secondary.main",
+        }}
+        onClick={handleClick}
+      >
+        <Close />
+      </IconButton>
       <Box
         sx={{
           display: "grid",

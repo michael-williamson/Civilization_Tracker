@@ -13,10 +13,23 @@ export const InfoWindowDisplay = (props) => {
     size,
   } = props;
 
+  const handleClick = () => {
+    setJsonIndex(null);
+    setCurrentInfoWindow(null);
+  };
+
   const item = dataArr[jsonIndex];
   const componentsObject = {
-    sites: <SitesInfoWindow item={item} size={size} />,
-    civilizations: <CivilizationsInfoWindow item={item} size={size} />,
+    sites: (
+      <SitesInfoWindow item={item} size={size} handleClick={handleClick} />
+    ),
+    civilizations: (
+      <CivilizationsInfoWindow
+        item={item}
+        size={size}
+        handleClick={handleClick}
+      />
+    ),
   };
   return (
     <InfoWindow
