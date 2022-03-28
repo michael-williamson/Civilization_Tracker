@@ -1,10 +1,25 @@
-Website featuring a timeline and map of Human History
+# Origins of Civilization
 
-!!notes:
+<img src="https://github.com/michael-williamson/Civilization_Tracker/blob/main/demoPics/civilization_tracker.png" width="400">
 
-** some style overrides of the Google Maps Api can be found in App.css**
-such as overrides for browser default scrollbar
+#### Site for History interests
 
-\*\* custom components require integration with Material UI in order to use theme as a prop,
-normally within the custom component the sx prop is available for theme allowing bypassing direct integration, but in the case of
-Chart.js another library I just imported the theme object directly
+## Link to Site
+
+#### [https://civilization-tracker.netlify.app/](https://civilization-tracker.netlify.app/)
+
+## Table of Contents
+
+- [General Info](#general-info)
+- [Technologies](#technologies)
+- [Link to backend API](https://github.com/michael-williamson/trade-buddy-api)
+
+## General Info
+
+Google Maps API that introduces the user to the Origins of Civilization. Contains a rich glossary, intriguing images, and interactive displays. This experience captures the progression of human history after the first crops were sown
+
+## Technologies
+
+- React 17.0.2
+- Material UI
+- Google Maps API
