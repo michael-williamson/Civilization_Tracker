@@ -26,8 +26,10 @@ const addTags = (arr, text, tags, keyIndex) => {
   //if multiple tags searches for the first occurring
   const tagFN = (tags) => {
     let currentIndex;
+    let lowerCaseText = text;
+    lowerCaseText = lowerCaseText.toString().toLowerCase();
     for (const item of tags) {
-      currentIndex = text.indexOf(item);
+      currentIndex = lowerCaseText.indexOf(item.toString().toLowerCase());
       if (currentIndex > -1 && indexStart === -1) {
         indexStart = currentIndex;
         tag = item;
@@ -38,7 +40,7 @@ const addTags = (arr, text, tags, keyIndex) => {
     }
   };
 
-  tagFN(tags);
+  tagFN(tags, text);
 
   if (indexStart === -1) {
     keyIndex += 1;

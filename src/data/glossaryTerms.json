@@ -227,5 +227,38 @@
             "domain": "CC BY-SA 3.0",
             "via": "Wikimedia Commons"
         }
+    },
+    {
+        "name": "Lapis lazuli",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lapis_lazuli_%2811968672163%29.jpg/256px-Lapis_lazuli_%2811968672163%29.jpg",
+        "definition": "Metamorphic rock with a deep-blue color profile used mostly for decorative items and art due to its rich color.  Found in many areas of where civilizations began.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Lapis_lazuli_(11968672163).jpg",
+        "imageAttribution": {
+            "author": "James Petts",
+            "domain": "CC BY-SA 2.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Metallurgy",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Sogenannter_Fritzdorfer_Becher_%28Henkelbecher%29.jpg/256px-Sogenannter_Fritzdorfer_Becher_%28Henkelbecher%29.jpg",
+        "definition": "A study of the chemical and physical behaviors of metallic elements and their mixtures known as alloys",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Sogenannter_Fritzdorfer_Becher_(Henkelbecher).jpg",
+        "imageAttribution": {
+            "author": "J. Vogel",
+            "domain": "CC BY-SA 4.0",
+            "via": "Wikimedia Commons"
+        }
+    },
+    {
+        "name": "Bullock cart",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bullock_cart_in_Tamil_Nadu.jpg/256px-Bullock_cart_in_Tamil_Nadu.jpg",
+        "definition": "Bullock cart or ox cart is simply a cart pulled by oxen.",
+        "imageLink": "https://commons.wikimedia.org/wiki/File:Bullock_cart_in_Tamil_Nadu.jpg",
+        "imageAttribution": {
+            "author": "CarTick",
+            "domain": "CC BY-SA 3.0",
+            "via": "Wikimedia Commons"
+        }
     }
 ]

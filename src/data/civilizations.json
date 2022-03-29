@@ -123,6 +123,9 @@
                 "wheat",
                 "barley"
             ],
+            "trade": [
+                "lapis lazuli"
+            ],
             "military": [
                 "phalanx"
             ],
@@ -154,7 +157,7 @@
                 }
             ]
         },
-        "locationSummary": "Centralized around the Indus River system,  the Indus Valley contains alluvial plains that are rich and fertile.",
+        "locationSummary": "Centralized around the Indus River system,  the Indus Valley has rich and fertile lands due to a large network of rivers and geographical formations.",
         "images": [
             {
                 "wikimediaAddress": "https://commons.wikimedia.org/wiki/File:Black_earthenware._Pr%C3%A9-Indus_civilization._Kashmir.JPG",
@@ -188,18 +191,18 @@
             }
         ],
         "linkToInfo": "https://en.wikipedia.org/wiki/Indus_Valley_Civilisation",
-        "summary": "",
-        "language": "",
-        "timeMeasurement": "",
-        "cultureDescription": "",
-        "religion": "",
-        "cosmology": "",
-        "resources": "",
-        "trade": "",
-        "military": "",
+        "summary": "The Indus River Valley civilization grew from a natural set of geographical features interacting such as mountain chains, river systems, and large bodies of water.  All of these features created a rich and fertile plain that was attractive for small groups of people to begin to settle and farm eventually forming a large and significant contributor to human progress and history.  Known as the Harappan Civilization, Harappa being a large city of this culture, the Indus Valley swelled with major populations with well established trade included cross continent.",
+        "language": "It is still begin researched the language of the Indus Valley Civilization, many suggest a 'lost' language known as Harappan.  Another idea is the Dravidian language of modern day southern India is a descendent language of this culture.",
+        "timeMeasurement": "research ongoing",
+        "cultureDescription": "The Indus Valley Civilization had a rich culture with crafts such as sculptures, pottery, gold jewelry, and bronze vessels.  Cubical dice have been found which demonstrate games played for past times.",
+        "religion": "There are many speculations about the religion of this culture.  Correlative assumptions have been made since there aren't many large temples if at all that most religion was on a smaller scale such as in homes and small temples.  There have been many artifacts lending credibility to developed universal figures but not enough evidence to draw any conclusions.",
+        "cosmology": "research ongoing",
+        "resources": "The majority crop was barley and domesticated cattle know categorized as zebu cattle were a staple of the Indus Valley Civilization.",
+        "trade": "Cross continental trade is evident by discovery of artifacts from various of far reaching cultures.  It is likely transport was done by small flat bottomed boats driven by sail.  Wheeled transport was also used, likely bullock cart, and possibly being the first civilization to use wheeled transport.",
+        "military": "research ongoing",
         "cities": [
             {
-                "name": "Sumer",
+                "name": "",
                 "gpsCoordinates": {
                     "lat": 36.7,
                     "long": 114.2
@@ -244,7 +247,12 @@
             "locationSummary": [
                 "alluvial plains"
             ],
-            "resources": [],
+            "trade": [
+                "bullock cart"
+            ],
+            "resources": [
+                "barley"
+            ],
             "military": [],
             "language": []
         }
@@ -360,6 +368,9 @@
         ],
         "tags": {
             "resources": [],
+            "trade": [
+                "Bullock cart"
+            ],
             "military": [],
             "language": []
         }
