@@ -2,7 +2,7 @@ export const routes = {
   Welcome: "",
   Map: "Map",
   Civilizations: "Civilizations/*",
-  Charts: "Charts",
+  // Charts: "Charts",
   Glossary: "Glossary",
 };
 
